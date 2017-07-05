@@ -1,10 +1,9 @@
-import { h, Component } from 'preact';
 import { Link } from 'preact-router/match';
 import style from './style';
 import { Button } from 'react-bootstrap';
 
 const Header = () => (
-	<header class={style.header}>
+	<header className={style.header}>
 		<img src="../../assets/wplogo1.png"></img>
 		<nav>
 			<Link activeClassName={style.active} href="/">Home</Link>
@@ -15,7 +14,6 @@ const Header = () => (
 			<Link activeClassName={style.active} href="/profile">Careers</Link>
 		</nav>
 		<Button>Get Started</Button>
-
 	</header>
 )
 
