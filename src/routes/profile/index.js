@@ -1,3 +1,5 @@
+// TODO: Delete this. Only using as reference for development.
+
 import { h, Component } from 'preact';
 import style from './style';
 

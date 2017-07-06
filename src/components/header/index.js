@@ -11,7 +11,6 @@ export default class Header extends Component {
 
 	// This handle changing the nav bar color on scroll
 	componentDidMount() {
-		console.log(this);
 		this._bindScroll()
 	}
 
@@ -62,27 +61,24 @@ export default class Header extends Component {
 
 	toggle = () => this.setState({ open: !this.state.open });
 
-	// close menu on navigate
-	componentWillReceiveProps({ url }) {
-		if (url!==this.props.url && this.state.open) {
+	viewChange = () => {
 			this.setState({ open:false, scrolled:false });
-		}
-	}
+	};
 
-	render({ url }, { open, scrolled }) {
-		console.log(scrolled, open);
+	render({ url }, { open, scrolled, ...props }) {
+		console.log(url);
 		return (
 			<header class={cx(style.header, open && style.open, scrolled && style.scrolled)}>
 				<img src="../../assets/wplogo1.png"></img>
 				{/* <section> */}
 				<nav>
 					{/* Remove active class name if we don't intend on giving it a selected style */}
-						<Link activeClassName={style.active} href="/">Home</Link>
-						<Link activeClassName={style.active} href="/profile">Products</Link>
-						<Link activeClassName={style.active} href="/profile">Food Safety</Link>
-						<Link activeClassName={style.active} href="/profile">Our Story</Link>
-						<Link activeClassName={style.active} href="/profile">Case Studies</Link>
-						<Link activeClassName={style.active} href="/profile">Careers</Link>
+						<Link activeClassName={style.active} onClick={this.viewChange} href="/">Home</Link>
+						<Link activeClassName={style.active} onClick={this.viewChange} href="/products">Products</Link>
+						<Link activeClassName={style.active} onClick={this.viewChange} href="/foodSafety">Food Safety</Link>
+						<Link activeClassName={style.active} onClick={this.viewChange} href="/ourStory">Our Story</Link>
+						<Link activeClassName={style.active} onClick={this.viewChange} href="/caseStudies">Case Studies</Link>
+						<Link activeClassName={style.active} onClick={this.viewChange} href="/careers">Careers</Link>
 				</nav>
 			{/* </section> */}
 				{/* <Button>Get Started</Button> */}
