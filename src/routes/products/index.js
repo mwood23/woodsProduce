@@ -7,7 +7,7 @@ export default class Products extends Component {
   render() {
     return (
       <div className={style.scroll}>
-        <div>
+        <div className={style.content}>
           This is the products page.
         </div>
       </div>
