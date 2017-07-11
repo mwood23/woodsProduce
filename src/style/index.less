@@ -11,6 +11,8 @@ html, body {
 	background: #FAFAFA;
 	font-family: 'Roboto';
 	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.2;
 	// color: #444;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -22,4 +24,11 @@ html, body {
 
 #app {
 	height: 100%;
+}
+
+// Responsive!
+@media (min-width: @small) {
+	h1 {
+		font-size: 25
+	}
 }
