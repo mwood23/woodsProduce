@@ -46,7 +46,6 @@ export default class Header extends Component {
 		const top = document.documentElement.scrollTop || document.body.parentNode.scrollTop || document.body.scrollTop
 		// Test < 1 since Safari's rebound effect scrolls past the top
 
-		console.log(this.state);
 		if (top < 20) {
 			// const className = `${style.header}`
 			// this.base.className = className
@@ -66,7 +65,6 @@ export default class Header extends Component {
 	};
 
 	render({ url }, { open, scrolled, ...props }) {
-		console.log(url);
 		return (
 			<header class={cx(style.header, open && style.open, scrolled && style.scrolled)}>
 				<img src="../../assets/wplogo1.png"></img>
