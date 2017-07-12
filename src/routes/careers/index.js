@@ -6,10 +6,8 @@ export default class Careers extends Component {
 
   render() {
     return (
-      <div className={style.scroll}>
-        <div>
-          This is the careers page.
-        </div>
+      <div className={style.content}>
+        This is the careers page.
       </div>
     );
   }

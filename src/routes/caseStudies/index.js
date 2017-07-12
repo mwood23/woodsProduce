@@ -6,10 +6,8 @@ export default class CaseStudies extends Component {
 
   render() {
     return (
-      <div className={style.scroll}>
-        <div>
-          This is the case studies page.
-        </div>
+      <div className={style.content}>
+        This is the case studies page.
       </div>
     );
   }

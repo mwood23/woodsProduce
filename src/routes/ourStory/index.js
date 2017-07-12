@@ -6,10 +6,8 @@ export default class OurStory extends Component {
 
   render() {
     return (
-      <div className={style.scroll}>
-        <div>
-          This is our story.
-        </div>
+      <div className={style.content}>
+        This is the story page.
       </div>
     );
   }

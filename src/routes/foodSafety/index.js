@@ -6,10 +6,8 @@ export default class FoodSafety extends Component {
 
   render() {
     return (
-      <div className={style.scroll}>
-        <div>
-          This is the food safety page.
-        </div>
+      <div className={style.content}>
+        This is the food safety page.
       </div>
     );
   }
