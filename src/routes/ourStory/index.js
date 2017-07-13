@@ -1,7 +1,7 @@
 import React, {h, Component} from 'preact';
 import style from './style';
 import Header from '../../components/header';
-import Hero from '../../components/Hero';
+import Hero from '../../components/hero';
 
 export default class OurStory extends Component {
 
