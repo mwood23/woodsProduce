@@ -1,0 +1,62 @@
+@import '~style/helpers';
+
+.productTile {
+  height: 45vh;
+  width: 20vw;
+  background-color: red;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tileText {
+
+    // Uncomment all for top right
+
+    // position: absolute;
+    // // bottom: 5px;
+    // // left: 5px;
+    // padding: 0;
+    // margin: 0;
+    // right: 40px; /* same as height */
+  	// height: 40px;
+  	// padding: 0 1em;
+  	// transform-origin: 100% 0;
+  	// background: deeppink;
+  	// line-height: 40px;
+    // /* Safari */
+    // -webkit-transform: rotate(-90deg);
+    //
+    // /* Firefox */
+    // -moz-transform: rotate(-90deg);
+    //
+    // /* IE */
+    // -ms-transform: rotate(-90deg);
+    //
+    // /* Opera */
+    // -o-transform: rotate(-90deg);
+    //
+    // -moz-transform-origin: 40px 20px;
+
+
+
+    display: inline-block;
+    background: rebeccapurple;
+    color:white;
+    border:1px solid grey;
+    padding: .25em;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    transform-origin:top left;
+    transform:translateY(100%) rotate(-90deg);
+
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
