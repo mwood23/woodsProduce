@@ -11,6 +11,11 @@
     object-fit: cover;
   }
 
+  @media (max-width: @nav-bar-mobile-breakpoint) {
+    height: 10rem;
+    width: 100%;
+	}
+
   .tileText {
 
     // Uncomment all for top right
@@ -53,9 +58,16 @@
     transform-origin:top left;
     transform:translateY(100%) rotate(-90deg);
 
+    @media (max-width: @nav-bar-mobile-breakpoint) {
+      transform-origin:initial;
+      transform:initial;
+  	}
+
     p {
       margin: 0;
       padding: 0;
     }
   }
+
+
 }
