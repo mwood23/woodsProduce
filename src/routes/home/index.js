@@ -9,6 +9,7 @@ import style from './style';
 import VideoBackground from '../../components/videoBackground';
 import DealsGrid from '../../components/dealsGrid';
 import ProductTiles from '../../components/productTiles';
+import FeaturedTiles from '../../components/featuredTiles';
 
 export default class Home extends Component {
 
@@ -36,10 +37,8 @@ export default class Home extends Component {
           </ul>
         </Section>
         <Section>
-          <Heading text="Current Deals" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+          <Heading text="Featured Items" />
+          <FeaturedTiles />
         </Section>
         <Section>
           <Heading text="Products" />
