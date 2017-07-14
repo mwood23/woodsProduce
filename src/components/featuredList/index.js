@@ -1,25 +1,25 @@
 import style from './style';
-import FeaturedTile from '../featuredTile';
+import FeaturedListItem from '../featuredListItem';
 
-const FeaturedTiles = () => (
-  <div className={style.featuredTiles}>
-    <FeaturedTile
+const FeaturedList = () => (
+  <div className={style.featuredList}>
+    <FeaturedListItem
       text="Opal Oranges"
       image="https://lh3.googleusercontent.com/jsCDmOnKJhRhSgoUNf9UNNbdUtyx_tU5mgkuu_-6c6tNwr7D4bxDS-POPmsilGtPvFgw40xIiY3vNf6_phib6tAUR0r5yJM3vBN-l4Q1HJuLLI1iUWp4oX5k7RmsjG9A61Fqv5q2-1U9sFEoK6pP6a6tAaCfc92kh3wMaLz8E112eoqUzlJLXdRUChL-LBZOm1-bkoElJm1CyYw-WWeM3stfb7Gwc9JPjZ8AVxH5OQsMComQQycTlAjJHI3GAWMHzLBJ8-t9fm0wor_q4lpwo1zxoIaI61kc07DUOGyDPY6Q_vLhY8waE-PVU3bOipZhOdZHhgNEHvRhYTMyAxIfsa97f7QeS8CtpVE9De5CYa9qA6QXJq35vnP9qJxd-_5QVEHo87hoFpcv5gj4UwSF2-d2UIgEsW-PUJsamiLyvoFoDxwWmHEILwP4Al4lljCevxVbyiq4pVNNVNMiaRcirzlUvVlNwoSgyt6KI0qUBl9zgq-vN3RYhCL15xy3sUN20jZYkaxYojURITvogmNkEMdIstaRfwipALkph_xs1MqfEvIAzH5KSiFvDAwg7Qv9d7AOgLKiJA1nk2MdIAOAnrH8GwxdvesC_UKfbPvR4TMWSPllbxdiccJ3Na_hDeBeOSsqHJ5vJ0lTW-ZBYE43E3a0Of910eMUFZ7JyWX1UpP8Tg=w2208-h1242-no"
       url="/products" />
-    <FeaturedTile
+    <FeaturedListItem
       text="3A Pickles"
       image="https://lh3.googleusercontent.com/W5-His3eXP36t4LuKi1qe_ejRRIzp3pnd8dHUgdH4iQHCGS6mmMk0ECXAHHgEzLZVcxdt7fRj5KgVej9leddqxlx_08xb4oJE_UU-1cluoemCLi45ElKRIEJn2NHx-z0zKW5-zfiCCGHDyAnolSvJukXPD8PZO62XKgMuxK7jb6Rf24hKPoHBXC1gUHYzTbl0FctGlkFFAI3G0Za7fJ5pVcsPLQhikje0GCjN09fzsbOEE-336ltdHduiJb648BQEvXlCx96AuLJprnKZDr7L9LQ_bR6ijNE6P_uZ9ogWWTVqZEgN4ABaSpFprW6u7vM48sDXod1OKRG2mqsNvXaViA7ikw6PzAbolgv7SnDpKBQkFcsMWKv9GDNLYbnwFyPiTWnqXtXbrs-YSAfbYU8Ug_9dseRrVqbcwKj-9XBliz_V_0rxKE8qtQ1qSacO4rnH8S97cVP2halhz3pAjg8IdhglWOFuYAZop4KC38ksbWMwhPFBG8a3PMBCrIjJy1mpUgLN0NWlqNy4keWXgmN5fyFoAXLibWibhWwGsrFPLYKHs9KKt7KF3LGw5Rx_4teb_z2Y1xn9LSHkCs-XJzeN-MZmnsvEhHyzO1A0KpLbYNXHEqjP4GS4I9TzfSa5LPvrcFc9xV3ws31LxTBgz7BeEWtKuZR-1vvLOwTrlHIfXsuSg=w2208-h1242-no"
       url="/products" />
-    <FeaturedTile
+    <FeaturedListItem
       text="Green Leaf Lettuce"
       image="https://lh3.googleusercontent.com/7NGqFrqArbEzS165A0ke0MWNMn8sOanzyB7wVM8aPsDlrSwlLxN-bII9M1CzMibdTCtwyOabzq3law1t-LWnhyLRL59Jl76seu2A75f_DxSMN8yQQ8bIR_8n6aa6p5jMcquVadKKV6B4U78jVITRzWieVNZBRoK4a_wU7CnjulnFkD7Mcmyhxg0j0bFi9v8JjxfU1Sfze5leCxrJvoJJQBs-UiSfWwuKdDr_wU5CSqmJFE_GqccvtEBJLIpOeFCrH-YzezivnbosBgyoE1-L2GiFSkJk0nkxWeWn-cmncuc717f8ryWO44P75_bBEDYVYWGKd3bhRN8rdyldY2FECsVtKFrb2wtq6K_cG4m24ybkywG0vez3Ltl2e0CRmTvZnxNDtl1murd-GXeXxwso60Y5tWec4EfsnG-8iJKDv9vjbGIVVOMVU2Osw80sYCStZ9JAlowbyWs7n-VlonWWbVoFeYo0EvfiG55ekPKpAN73RiXN0mlA8b2GFt1tJU2c3jwmS41Kl7htPjcmq82Xr37r0EjG9lMHsuVv_K9RHjY7PgEW3P-yxp9G74y6I0IppdRkjqbVwoVAQbbH0ojZx9v_VobU1pZqkRXq34IYNOw365H0PQu32XAyoUVQR809O_G5F95BeQcneh2jpTfYvnFw0B7O4rTdWjzVpwsCJVOlOQ=w2208-h1242-no"
       url="/products" />
-    <FeaturedTile
+    <FeaturedListItem
       text="Organic White Seedless Grapes"
       image="https://lh3.googleusercontent.com/LzGN1oETTQUC-aCfL6WIX-1BGESvYZAnchBhlCjTlpT3Wx6mg64JLBRVwTvmoVCvnIQ92yyC7GSUoYPxHdCIgwA6lFTnYfLmVNgWtw0920BHON0FVA-6GItkjpQlAk65ULbntVTqWkYDFbr9uxMf08pODSRl5nYD5vo3cY4Gyvo8Yb1_h6OuakAxFwkd_38ojUVWdKoJdK1sBaKJtuAxKfmHXkUo58gQsFOWhC3esSZoAvpAhXYpjAEUu0-1IKZHMqv83RfwwUNJn1g9yCdfTYS2WcVWJhuEDMcrkMqKViVcU0ZSyfPo7eSGqWeElU5o5DN4d2Oghm0LI8kyiJTeOA8G6S6bzxxkWfXyx7h_CsiPOmVChVphz_1EHPxicjj7c85ykzNAUbvcNhj1CYSRoZCXQOgAtAhcpl4Si7agKwSjdhyqMZv964GLJCtVmaorZDMFP8u02evdswuRhRjJV6iq7QqN342sA9vxmJ_8rxKgPfrRaDiX1L7QHg43x90JZLTrHMcBmPNgKNvLwG_0j0bJwQhP_itRAv0Ci_ZQncwGBOXkHu6bhoOEATQ899NkRyC_lBz879DHMOxN_d1ICLEJaS3SVeFaRSwELS_8OUdxEGJpUeechMCazIGaj6GNaPutxMM8MFF17O8rp1JTnJgYHUXkf5z7jakmHKB2jCNXZg=w2208-h1242-no"
       url="/products" />
   </div>
 );
 
-export default FeaturedTiles
+export default FeaturedList

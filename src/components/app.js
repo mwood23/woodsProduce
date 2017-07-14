@@ -7,7 +7,6 @@ import Home from '../routes/home';
 import Products from '../routes/products';
 import FoodSafety from '../routes/foodSafety';
 import OurStory from '../routes/ourStory';
-import CaseStudies from '../routes/caseStudies';
 import Careers from '../routes/careers';
 // import Home from 'async!./home';
 // import Profile from 'async!./profile';
@@ -30,7 +29,6 @@ export default class App extends Component {
 					<Products path="/products" />
 					<FoodSafety path="/foodSafety" />
 					<OurStory path="/ourStory" />
-					<CaseStudies path="/caseStudies" />
 					<Careers path="/careers" />
 				</Router>
 				<Footer />

@@ -1,8 +1,8 @@
 import style from './style';
 import { Link } from 'preact-router/match';
 
-const FeaturedTile = ({text, image, url}) => (
-  <Link href={url} className={style.featuredTile}>
+const FeaturedListItem = ({text, image, url}) => (
+  <Link href={url} className={style.featuredListItem}>
     {/* <div> */}
       <img src={image}></img>
 
@@ -13,4 +13,4 @@ const FeaturedTile = ({text, image, url}) => (
   </Link>
 );
 
-export default FeaturedTile
+export default FeaturedListItem

@@ -7,9 +7,8 @@ import React, {h, Component} from 'preact';
 import Section from '../../components/section';
 import style from './style';
 import VideoBackground from '../../components/videoBackground';
-import DealsGrid from '../../components/dealsGrid';
 import ProductTiles from '../../components/productTiles';
-import FeaturedTiles from '../../components/featuredTiles';
+import FeaturedList from '../../components/featuredList';
 
 export default class Home extends Component {
 
@@ -36,7 +35,7 @@ export default class Home extends Component {
         </Section>
         <Section>
           <Heading text="Featured Items" />
-          <FeaturedTiles />
+          <FeaturedList />
         </Section>
         <Section>
           <Heading text="Products" />
