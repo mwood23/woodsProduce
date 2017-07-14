@@ -7,7 +7,6 @@ export default class VideoBackground extends Component {
 
 
 	render({}, {timestamp}) {
-    console.log(timestamp);
 		return (
       <div className={style.videoWrapper}>
 				<iframe src="https://www.youtube.com/embed/HxOwaKulUlM?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=HxOwaKulUlM" frameborder="0" allowfullscreen></iframe>

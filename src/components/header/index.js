@@ -59,8 +59,10 @@ export default class Header extends Component {
 
 	toggle = () => this.setState({ open: !this.state.open });
 
-	viewChange = () => {
+	viewChange = (event) => {
+		if (window.location.pathname !== event.target.pathname) {
 			this.setState({ open:false, scrolled:false });
+		}
 	};
 
 	render({ url }, { open, scrolled, ...props }) {
