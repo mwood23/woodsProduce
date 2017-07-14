@@ -26,6 +26,11 @@
 			a {
 				color: black;
 			}
+
+			button {
+				color: black;
+				border: solid black 1px;
+			}
 		}
 	}
 
@@ -58,7 +63,7 @@
 	nav {
 		position: absolute;
 		display: inline-block;
-		right: 0;
+		right: 1rem;
 		font-size: 100%;
 		// padding-left: 1.5rem;
 		@media (max-width: @nav-bar-mobile-breakpoint) {
@@ -89,21 +94,27 @@
 			// &.active {
 			// 	background: rgba(255,255,255,0.4);
 			// }
-
-			&:last-child {
-				color: red;
-			}
 			@media (max-width: @nav-bar-mobile-breakpoint) {
 				display: block;
 			}
 		}
-	}
 
-	button {
-		// position: absolute;
-		// right: 0;
-		top: 50%;
-		transform: translate(-50%, -50%);
+		button {
+			// HACK: Idk why roboto keeps extending to the height of the parent element
+			font: icon;
+			font-size: 16px;
+
+			margin-left: 1rem;
+			transform: inherit;
+			top: initial;
+			border: solid white 1px;
+			background-color: transparent;
+			color: white;
+
+			@media (max-width: @nav-bar-mobile-breakpoint) {
+				display: none;
+			}
+		}
 	}
 }
 

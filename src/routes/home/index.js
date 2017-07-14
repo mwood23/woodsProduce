@@ -19,9 +19,7 @@ export default class Home extends Component {
         <VideoBackground />
         <Section>
           <Heading text="Where Fresh Meets Friendly" />
-          <Content text="Family owned since 1987, Wood's Produce is a full line fruit and vegetable wholesaler that services restaurants, grocery stores, retail markets, and wholesalers.
-
-            From our humble beginnings of one man delivering to customers in a Wise potato chip truck to becoming one of the largest independent wholesalers in the region, service is at the heart of everything we do."/>
+          <Content text="Family owned since 1987, Wood's Produce is a full line fruit and vegetable wholesaler that services restaurants, grocery stores, retail markets, and wholesalers. From our humble beginnings of one man delivering to customers in a Wise potato chip truck to becoming one of the largest independent wholesalers in the region, service is at the heart of everything we do."/>
         </Section>
         <Section>
           <Heading text="Some of Our Partners" />

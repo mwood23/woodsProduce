@@ -1,1 +1,17 @@
 @import '~style/helpers';
+
+.partnersListItem {
+  width: 21vw;
+  height: 10rem;
+  padding: 1vw;
+
+  @media (max-width: @nav-bar-mobile-breakpoint) {
+    width: 100%;
+	}
+
+  img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+  }
+}

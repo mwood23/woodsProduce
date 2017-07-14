@@ -2,9 +2,9 @@ import style from './style';
 import {Col, Image} from 'react-bootstrap';
 
 const PartnersListItem = ({image}) => (
-  <Col xs={3}>
-    <Image src={image} thumbnail></Image>
-  </Col>
+  <div className={style.partnersListItem}>
+    <img src={image} />
+  </div>
 );
 
 export default PartnersListItem

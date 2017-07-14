@@ -74,11 +74,12 @@ export default class Header extends Component {
 					<Link activeClassName={style.active} onClick={this.viewChange} href="/products">Products</Link>
 					<Link activeClassName={style.active} onClick={this.viewChange} href="/foodSafety">Food Safety</Link>
 					<Link activeClassName={style.active} onClick={this.viewChange} href="/ourStory">Our Story</Link>
-					<Link activeClassName={style.active} onClick={this.viewChange} href="/caseStudies">Case Studies</Link>
 					<Link activeClassName={style.active} onClick={this.viewChange} href="/careers">Careers</Link>
 
 					{/* TODO: Do something here */}
-					<Link activeClassName={style.active} onClick={this.viewChange} href="/">Get Started</Link>
+					{/* <Link activeClassName={style.active} onClick={this.viewChange} href="/"></Link> */}
+
+					<button>Get Started</button>
 				</nav>
 				<Hamburgler open={open} scrolled={scrolled} onClick={this.toggle} />
 			</header>
