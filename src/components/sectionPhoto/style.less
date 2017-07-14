@@ -1,0 +1,38 @@
+@import '~style/helpers';
+
+.sectionPhoto {
+  padding: 1rem 2rem;
+  min-height: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  @media (max-width: @nav-bar-mobile-breakpoint) {
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-top: 0;
+  }
+
+  .photoContainer {
+    width: 17rem;
+    height: 17rem;
+    margin: 3rem;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 60%;
+  }
+}
