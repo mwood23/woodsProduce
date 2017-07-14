@@ -25,16 +25,12 @@
     "sass-loader": "^6.0.6"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "classnames": "^2.2.5",
-    "lodash": "^4.17.4",
     "preact": "^8.1.0",
     "preact-compat": "^3.16.0",
     "preact-router": "^2.5.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-player": "^0.18.0",
-    "roboto-fontface": "^0.7.0",
-    "roboto-npm-webfont": "0.0.4"
+    "react-player": "^0.18.0"
   }
 }

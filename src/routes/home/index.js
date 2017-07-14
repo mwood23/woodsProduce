@@ -1,4 +1,3 @@
-import 'roboto-npm-webfont';
 import Content from '../../components/content';
 import Header from '../../components/header';
 import Heading from '../../components/heading';
@@ -17,15 +16,15 @@ export default class Home extends Component {
       <div className={style.scroll}>
         <VideoBackground />
         <Section>
-          <Heading text="Where Fresh Meets Friendly" />
+          <Heading text="WHERE FRESH MEETS FRIENDLY" />
           <Content text="Family owned since 1987, Wood's Produce is a full line fruit and vegetable wholesaler that services restaurants, grocery stores, retail markets, and wholesalers. From our humble beginnings of one man delivering to customers in a Wise potato chip truck to becoming one of the largest independent wholesalers in the region, service is at the heart of everything we do."/>
         </Section>
         <Section>
-          <Heading text="Some of Our Partners" />
+          <Heading text="SOME OF OUR PARTNERS" />
           <PartnersList />
         </Section>
         <Section>
-          <Heading text="Why Us" />
+          <Heading text="WHY US" />
           <ul>
             <li>Next Day Delivery</li>
             <li>Dependable Delivery</li>
@@ -34,11 +33,11 @@ export default class Home extends Component {
           </ul>
         </Section>
         <Section>
-          <Heading text="Featured Items" />
+          <Heading text="FEATURED ITEMS" />
           <FeaturedList />
         </Section>
         <Section>
-          <Heading text="Products" />
+          <Heading text="PRODUCTS" />
           <ProductTiles />
         </Section>
       </div>

@@ -19,17 +19,17 @@
 		img {
 			filter: invert(80%);
 		}
+
+		button {
+			color: black;
+			border: solid black 1px;
+		}
 	}
 
 	@media (min-width: @nav-bar-mobile-breakpoint) {
 		&.scrolled {
 			a {
 				color: black;
-			}
-
-			button {
-				color: black;
-				border: solid black 1px;
 			}
 		}
 	}
@@ -51,11 +51,16 @@
 			img {
 				filter: none;
 			}
+
+			button {
+				border: solid white 1px;
+				color: white;
+			}
 		}
 	}
 
 	img {
-		padding-left: 2rem;
+		padding: 0 1.5rem;
 		width: 9rem;
 		vertical-align: middle;
 	}
@@ -68,7 +73,7 @@
 		// padding-left: 1.5rem;
 		@media (max-width: @nav-bar-mobile-breakpoint) {
 			display: block;
-			position: relative;
+			position: static;
 			right: initial;
 			// margin-top: @header-height;
 			// padding-left: 0;
@@ -100,11 +105,11 @@
 		}
 
 		button {
-			// HACK: Idk why roboto keeps extending to the height of the parent element
+			// HACK: Idk why it keeps extending to the height of the parent element
 			font: icon;
-			font-size: 16px;
+			font-size: 20px;
 
-			margin-left: 1rem;
+			margin-left: .5rem;
 			transform: inherit;
 			top: initial;
 			border: solid white 1px;
@@ -112,7 +117,9 @@
 			color: white;
 
 			@media (max-width: @nav-bar-mobile-breakpoint) {
-				display: none;
+				position: absolute;
+			  top: 1rem;
+			  right: 3.5rem;
 			}
 		}
 	}
@@ -190,6 +197,10 @@
 	}
 
 	&[open] {
+		.hb1, .hb2, .hb3 {
+			background: white;
+		}
+
 		.hb1 {
 			transform: translate(4px,-1px) rotate(45deg);
 		}
