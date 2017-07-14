@@ -56,12 +56,15 @@
 	}
 
 	nav {
-		position: relative;
-		display: inline;
+		position: absolute;
+		display: inline-block;
+		right: 0;
 		font-size: 100%;
 		// padding-left: 1.5rem;
 		@media (max-width: @nav-bar-mobile-breakpoint) {
 			display: block;
+			position: relative;
+			right: initial;
 			// margin-top: @header-height;
 			// padding-left: 0;
 			// margin-right: 100px;
@@ -86,6 +89,10 @@
 			// &.active {
 			// 	background: rgba(255,255,255,0.4);
 			// }
+
+			&:last-child {
+				color: red;
+			}
 			@media (max-width: @nav-bar-mobile-breakpoint) {
 				display: block;
 			}
@@ -93,8 +100,8 @@
 	}
 
 	button {
-		position: absolute;
-		right: 0;
+		// position: absolute;
+		// right: 0;
 		top: 50%;
 		transform: translate(-50%, -50%);
 	}

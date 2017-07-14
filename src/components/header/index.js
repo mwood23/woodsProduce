@@ -68,18 +68,18 @@ export default class Header extends Component {
 		return (
 			<header class={cx(style.header, open && style.open, scrolled && style.scrolled)}>
 				<img src="../../assets/wplogo1.png"></img>
-				{/* <section> */}
 				<nav>
 					{/* Remove active class name if we don't intend on giving it a selected style */}
-						<Link activeClassName={style.active} onClick={this.viewChange} href="/">Home</Link>
-						<Link activeClassName={style.active} onClick={this.viewChange} href="/products">Products</Link>
-						<Link activeClassName={style.active} onClick={this.viewChange} href="/foodSafety">Food Safety</Link>
-						<Link activeClassName={style.active} onClick={this.viewChange} href="/ourStory">Our Story</Link>
-						<Link activeClassName={style.active} onClick={this.viewChange} href="/caseStudies">Case Studies</Link>
-						<Link activeClassName={style.active} onClick={this.viewChange} href="/careers">Careers</Link>
+					<Link activeClassName={style.active} onClick={this.viewChange} href="/">Home</Link>
+					<Link activeClassName={style.active} onClick={this.viewChange} href="/products">Products</Link>
+					<Link activeClassName={style.active} onClick={this.viewChange} href="/foodSafety">Food Safety</Link>
+					<Link activeClassName={style.active} onClick={this.viewChange} href="/ourStory">Our Story</Link>
+					<Link activeClassName={style.active} onClick={this.viewChange} href="/caseStudies">Case Studies</Link>
+					<Link activeClassName={style.active} onClick={this.viewChange} href="/careers">Careers</Link>
+
+					{/* TODO: Do something here */}
+					<Link activeClassName={style.active} onClick={this.viewChange} href="/">Get Started</Link>
 				</nav>
-			{/* </section> */}
-				{/* <Button>Get Started</Button> */}
 				<Hamburgler open={open} scrolled={scrolled} onClick={this.toggle} />
 			</header>
 		);
