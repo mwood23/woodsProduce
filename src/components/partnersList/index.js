@@ -1,5 +1,4 @@
 import style from './style';
-import {Grid, Row} from 'react-bootstrap';
 import PartnersListItem from '../partnersListItem'
 
 const PartnersList = () => (

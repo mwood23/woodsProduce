@@ -2,7 +2,6 @@ import { h, Component } from 'preact';
 import cx from 'classnames';
 import { Link } from 'preact-router/match';
 import style from './style';
-import { Button } from 'react-bootstrap';
 
 export default class Header extends Component {
 	// This handles opening and closing the hamburger menu on mobile
@@ -67,7 +66,9 @@ export default class Header extends Component {
 	render({ url }, { open, scrolled, ...props }) {
 		return (
 			<header class={cx(style.header, open && style.open, scrolled && style.scrolled)}>
-				<img src="../../assets/wplogo1.png"></img>
+				<Link activeClassName={style.active} onClick={this.viewChange} href="/">
+					<img src="../../assets/wplogo1.png" />
+				</Link>
 				<nav>
 					{/* Remove active class name if we don't intend on giving it a selected style */}
 					<Link activeClassName={style.active} onClick={this.viewChange} href="/">Home</Link>
