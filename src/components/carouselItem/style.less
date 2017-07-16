@@ -1,0 +1,21 @@
+@import '~style/helpers';
+
+.carouselItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  width: 7rem;
+
+
+  img {
+    filter: grayscale(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    &:hover {
+      filter: none;
+    }
+  }
+}

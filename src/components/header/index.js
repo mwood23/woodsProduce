@@ -69,7 +69,7 @@ export default class Header extends Component {
 		return (
 			<header class={cx(style.header, open && style.open, scrolled && style.scrolled)}>
 				<Link activeClassName={style.active} onClick={this.viewChange} href="/">
-					<img src="../../assets/wplogo3.png" />
+					<img src="../../assets/wplogo1.png" />
 				</Link>
 				<nav>
 					{/* Remove active class name if we don't intend on giving it a selected style */}

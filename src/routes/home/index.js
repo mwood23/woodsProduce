@@ -1,29 +1,29 @@
 import Content from '../../components/content';
 import Header from '../../components/header';
 import Heading from '../../components/heading';
-import PartnersList from '../../components/partnersList';
+import WhyUsList from '../../components/whyUsList';
 import React, {h, Component} from 'preact';
 import Section from '../../components/section';
 import style from './style';
 import VideoBackground from '../../components/videoBackground';
 import ProductTiles from '../../components/productTiles';
 import FeaturedList from '../../components/featuredList';
+import Carousel from '../../components/carousel';
 
 export default class Home extends Component {
 
   render() {
+
     return (
       <div className={style.scroll}>
         <VideoBackground />
         <Section>
           <Heading text="WHERE FRESH MEETS FRIENDLY" />
-          <Content text="Family owned since 1987, Wood's Produce is a full line fruit and vegetable wholesaler that services restaurants, grocery stores, retail markets, and wholesalers. From our humble beginnings of one man delivering to customers in a Wise potato chip truck to becoming one of the largest independent wholesalers in the region, service is at the heart of everything we do."/>
+          <Content text="Family owned since 1987, Wood's Produce has grown from its humble roots into a leading, full line perishable foods wholesaler."/>
+          <WhyUsList />
+          <Carousel></Carousel>
         </Section>
-        <Section>
-          <Heading text="SOME OF OUR PARTNERS" />
-          <PartnersList />
-        </Section>
-        <Section>
+        {/* <Section>
           <Heading text="WHY US" />
           <ul>
             <li>Next Day Delivery</li>
@@ -31,7 +31,7 @@ export default class Home extends Component {
             <li>The same rigorous food safety standards as Nestle and Kraft Foods</li>
             <li>We buy direct from the farm</li>
           </ul>
-        </Section>
+        </Section> */}
         <Section>
           <Heading text="PRODUCTS" />
           <ProductTiles />
