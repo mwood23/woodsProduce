@@ -1,8 +1,8 @@
 @import '~style/helpers';
 
 .sectionPhoto {
-  padding: 1rem 2rem;
-  min-height: 18rem;
+  padding: 1rem;
+  min-height: @section-min-height;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,10 +24,14 @@
     margin-top: 0;
   }
 
+  ul {
+    align-self: flex-start;
+  }
+
   .photoContainer {
     width: 17rem;
     height: 17rem;
-    margin: 3rem;
+    margin: 1rem 3rem;
 
     img {
       height: 100%;

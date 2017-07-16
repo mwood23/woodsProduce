@@ -33,12 +33,12 @@ export default class Home extends Component {
           </ul>
         </Section>
         <Section>
-          <Heading text="FEATURED ITEMS" />
-          <FeaturedList />
-        </Section>
-        <Section>
           <Heading text="PRODUCTS" />
           <ProductTiles />
+        </Section>
+        <Section>
+          <Heading text="<DATE HERE> FEATURED ITEMS" />
+          <FeaturedList />
         </Section>
       </div>
     );
