@@ -1,0 +1,13 @@
+@import '~style/helpers';
+
+.rowList {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  @media (max-width: @small) {
+    flex-wrap: wrap;
+	}
+}

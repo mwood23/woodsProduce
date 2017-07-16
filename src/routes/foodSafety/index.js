@@ -5,6 +5,7 @@ import Section from '../../components/section';
 import SectionPhoto from '../../components/sectionPhoto';
 import Heading from '../../components/heading';
 import Content from '../../components/content';
+import RowList from '../../components/rowList';
 
 export default class FoodSafety extends Component {
 
@@ -35,6 +36,10 @@ export default class FoodSafety extends Component {
             <li>100 Kilowatt, Caterpillar D-100 6 generator to maintain our cold-chain through severe weather conditions</li>
           </ul>
         </SectionPhoto>
+        <Section>
+          <Heading text="CERTIFICATIONS" />
+          <RowList />
+        </Section>
       </div>
     );
   }
