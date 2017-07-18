@@ -37,7 +37,7 @@ export default class Home extends Component {
           <ProductTiles />
         </Section>
         <Section>
-          <Heading text="<DATE HERE> FEATURED ITEMS" />
+          <Heading text="FEATURED ITEMS" />
           <FeaturedList />
         </Section>
       </div>

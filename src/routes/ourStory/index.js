@@ -12,9 +12,9 @@ export default class OurStory extends Component {
   render() {
     return (
       <div>
-        <Hero image="https://lh3.googleusercontent.com/uGwAEZX2PR54EdNY9b3m0Y1A1GKxzkUYKAOSbyuczXzlMY2xyPFe4D40MawHQHw9feaeMjn0OLvXaeDJt8FkGdmHkhpUof1vFAMruJ-3TNH5j6V3iBhl4GBmk5VOdmWpchctJKGvtN4VuMu2o4fs9Xk0H9f2x_0L2rSqun680XUXaQUXCpUUy6uvBdRUXgOOi_tUOKycYHBFwySKBj0HrhrBUcGhNFENBgPW-Y8MSbpKmazQIvprDlshaKtICbdUrjyuCqOEBmjx5Sw5b2Zm_Z6ePDqrsEX24JQYaq-3y0B0lNcabjtjfadkIUFMsVnS1bTX1FxZWrKLcJu4_e0_xZ3KXdAh7lucWR4PwoeWokT2pCh9n3PiqSrrTaTtM3VNWRZdAG_7KNOqErtQYVa1pjsvIQKDExybsirn-1mP9OMpzA2XySSMbipUiM_W2x_-vjVBbLHpSAkAMdyl7bc2qvygKMxHkeiN41bgwIpZukCC7gUz3peENvX-bXaOrUeDjwy4efOnGM389m9etwXU2jN2aWvrN5EmUq8MU5zpGxdsMhKIoYw2f03dYphn-n0TtuZwEJnHYp5_18f70mQMlrDzl1cuLwC22UHJhziIYKcNqCL7hzlPaMqgRXai1dpGiUbfEAYvecnOyQfx-Bc9MBrE6Ub7KTkgYbD6_JbMwzQ4wg=w512-h164-no" heading="Our Story" />
+        <Hero image="https://lh3.googleusercontent.com/QgGD93CesOaRlZRjTYAUJGA1h87oknLMZGGcku0-zDyj_u0oUXrZ-JL1zz63z1SMQkD8zwKvBH2rsXeIdSlO8vF_DJOtuFXSmRc_soAlREBW_F6kcuSt63LbRlDuMEP_mrhCGxx_2-g-35xxoo9n0jnokT7kYkuuqe-cNeVp8Bgfy7LrL6_3SMatoV5Ka6C2sbx0I1hsgqu7eHLyPlk82ORqd01Yrr6nk4zTichi_s_Jl0pMJfm6StpFh4UfRXRUA17TPmSW88oQ9fd8BzUtkB44Nk06Prb8FetmwcFQ5wBZPQWGUrmdSHnoM3w-xmq3fDKscuFfjvyGoEspnAHpoD8PaQQ5hgiol6Y8ZKpnZRTF45fdJhyU63ENzwQzVkoegs0_YQdeohGhWkVS1Lu1x_Ct-G2bfeQUIZc6qxpYvpM9OLBg8RTI7WduedkkFPAN53SJwS2QVm5cQZZ0tT3YcVAibpHQi4NyMht1RIvvi7-k4YWjwPScrzWtSDjawIykCsMrRgiOMR9x-UdLkEFbBht-DXrKuA1N2hRHPl_g3hmH_pXwnRKCQQsYCL2P5lvHLt1qaVmg7-GGx4dHW_MVyy-l8ZPgmMwhn7di_ZmwKBpxomtobtoAFJO2ecE_h2k4qhmmPLojLkIZEcMT-Fbve90M78-wvijBNB9j32Kg3EDAMA=w1465-h481-no" heading="Our Story" />
         <Section>
-          <Heading text="WE'RE DEDICATED TO OUT CUSTOMERS" />
+          <Heading text="WE'RE DEDICATED TO OUR CUSTOMERS" />
           <Content text="We know it takes hard work to deliver fresh food, and that's why Wood's Produce Company has been offering the highest quality produce since 1987. From our food safety practices to deliveries, everything we do is with integrity and dedication to customers like you.
 
           Take a look at our products and contact us if you see something you like. From our family to yours, we look forward to providing you with quality food." />
