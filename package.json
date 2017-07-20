@@ -26,11 +26,14 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "google-map-react": "^0.24.0",
+    "lodash": "^4.17.4",
     "preact": "^8.1.0",
     "preact-compat": "^3.16.0",
     "preact-router": "^2.5.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-google-maps": "^7.2.0",
     "react-owl-carousel": "^2.2.0",
     "react-player": "^0.18.0"
   }

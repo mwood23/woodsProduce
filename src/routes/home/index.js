@@ -9,6 +9,7 @@ import VideoBackground from '../../components/videoBackground';
 import ProductTiles from '../../components/productTiles';
 import FeaturedList from '../../components/featuredList';
 import Carousel from '../../components/carousel';
+import GoogleMapView from '../../components/map';
 
 export default class Home extends Component {
 
@@ -23,15 +24,9 @@ export default class Home extends Component {
           <WhyUsList />
           <Carousel></Carousel>
         </Section>
-        {/* <Section>
-          <Heading text="WHY US" />
-          <ul>
-            <li>Next Day Delivery</li>
-            <li>Dependable Delivery</li>
-            <li>The same rigorous food safety standards as Nestle and Kraft Foods</li>
-            <li>We buy direct from the farm</li>
-          </ul>
-        </Section> */}
+        <Section>
+          <GoogleMapView />
+        </Section>
         <Section>
           <Heading text="PRODUCTS" />
           <ProductTiles />
