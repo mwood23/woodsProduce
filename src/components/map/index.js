@@ -1,22 +1,13 @@
-import _ from "lodash";
+import flowRight from "lodash.flowRight";
 import style from './style';
 
-import {
-  default as React,
-  Component,
-  PropTypes,
-} from "react";
+import { default as React, Component, PropTypes } from "react";
 
+// TODO: Need a loader for google maps async
 // import FaSpinner from "react-icons/lib/fa/spinner";
 
 import withScriptjs from "react-google-maps/lib/async/withScriptjs";
-
-import {
-  withGoogleMap,
-  GoogleMap,
-  Marker,
-  Polygon
-} from "react-google-maps";
+import { withGoogleMap, GoogleMap, Marker, Polygon } from "react-google-maps";
 
 /*
  * This is the modify version of:
@@ -24,7 +15,7 @@ import {
  *
  * Loaded using async loader.
  */
-const GoogleMapComponent = _.flowRight(
+const GoogleMapComponent = flowRight(
   withScriptjs,
   withGoogleMap,
 )(props => (
