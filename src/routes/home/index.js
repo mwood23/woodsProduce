@@ -4,6 +4,7 @@ import Heading from '../../components/heading';
 import WhyUsList from '../../components/whyUsList';
 import React, {h, Component} from 'preact';
 import Section from '../../components/section';
+import VideoSection from '../../components/videoSection';
 import style from './style';
 import VideoBackground from '../../components/videoBackground';
 import ProductTiles from '../../components/productTiles';
@@ -24,9 +25,7 @@ export default class Home extends Component {
           <WhyUsList />
           <Carousel></Carousel>
         </Section>
-        <Section>
-          <GoogleMapView />
-        </Section>
+        <VideoSection />
         <Section>
           <Heading text="PRODUCTS" />
           <ProductTiles />
