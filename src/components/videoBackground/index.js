@@ -28,9 +28,9 @@ export default class VideoBackground extends Component {
             onEnded={() => this.setState({ playing: false })}
             onError={e => console.log('onError', e)}
             fileConfig={{ attributes: { autoPlay: true }}} />
-        {/* <div className={style.tagline}>
+        <div className={style.tagline}>
           <h1>FULL LINE PERISHABLE FOODS WHOLESALER</h1>
-        </div> */}
+        </div>
       </div>
 		);
 	}

@@ -2,8 +2,8 @@ import { h, Component } from 'preact';
 import cx from 'classnames';
 import { Link } from 'preact-router/match';
 import style from './style';
-import ReactModal from 'react-modal'
-import Heading from '../heading'
+import ReactModal from 'react-modal';
+import Heading from '../heading';
 
 export default class Header extends Component {
 	// This handles opening and closing the hamburger menu on mobile
@@ -120,29 +120,28 @@ export default class Header extends Component {
 					{/* <Link activeClassName={style.active} onClick={this.viewChange} href="/"></Link> */}
 
 					<button onClick={this.handleOpenModal}>Contact Us</button>
-
-					<ReactModal
-           isOpen={showModal}
-           contentLabel="onRequestClose Example"
-					 overlayClassName={style.modalOverlay}
-					 className={style.modal}
-					 closeTimeoutMS={300}
-           onRequestClose={this.handleCloseModal}>
-          		<Heading text="GIVE US A RING" />
-          		<img className={style.close} onClick={this.handleCloseModal} src="../../assets/close.svg" />
-							<div>
-								<p>Ready to get started or have a question for us? Please call us at</p>
-								{/* <br /> */}
-								<p className={style.phoneNumber}>276-952-8365 {copyNumber}</p>
-								{/* <br /> */}
-								<p> and ask for Jonathon. He'll be able to answer any questions you have about buying, procurement, cross-docking, or anything else.</p>
-							</div>
-							<div>
-								<p>Rather email? Please send a message to <b>jonathon@woodsproduce.com</b></p>
-								<p>Need to fax? <b>276-952-2974</b></p>
-							</div>
-        	</ReactModal>
 				</nav>
+				<ReactModal
+					isOpen={showModal}
+					contentLabel="onRequestClose Example"
+					overlayClassName={style.modalOverlay}
+					className={style.modal}
+					closeTimeoutMS={300}
+					onRequestClose={this.handleCloseModal}>
+					<Heading text="GIVE US A RING" />
+					<img className={style.close} onClick={this.handleCloseModal} src="../../assets/close.svg" />
+					<div>
+						<p>Ready to get started or have a question for us? Please call us at</p>
+						{/* <br /> */}
+						<p className={style.phoneNumber}>276-952-8365 {copyNumber}</p>
+						{/* <br /> */}
+						<p> and ask for Jonathon. He'll be able to answer any questions you have about buying, procurement, cross-docking, or anything else.</p>
+					</div>
+					<div>
+						<p>Rather email? Please send a message to <b>jonathon@woodsproduce.com</b></p>
+						<p>Need to fax? <b>276-952-2974</b></p>
+					</div>
+				</ReactModal>
 				<Hamburgler open={open} scrolled={scrolled} onClick={this.toggle} />
 			</header>
 		);
