@@ -6,12 +6,19 @@
   margin: 1rem;
 
   @media (max-width: @small) {
-    width: 40%;
+    width: 90%;
 	}
 
   img {
     object-fit: contain;
     height: 80%;
     width: 80%;
+    display: block;
+    margin: auto;
+
+    @media (max-width: @small) {
+      width: 60%;
+      heigh: 60%;
+  	}
   }
 }
