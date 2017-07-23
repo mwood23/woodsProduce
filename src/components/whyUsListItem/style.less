@@ -1,24 +1,27 @@
 @import '~style/helpers';
 
 .whyUsListItem {
-  width: 23vw;
-  padding: 1vw;
-  margin: 1rem;
+  width: 23%;
+  margin: 2rem;
 
-  @media (max-width: @small) {
-    width: 90%;
-	}
-
-  img {
-    object-fit: contain;
-    height: 80%;
-    width: 80%;
-    display: block;
-    margin: auto;
-
-    @media (max-width: @small) {
-      width: 60%;
-      heigh: 60%;
-  	}
+  @media (max-width: @nav-bar-mobile-breakpoint) {
+    width: 60%;
   }
+
+  @media (max-width: @x-small) {
+    width: 90%;
+  }
+
+  .photoContainer {
+    width: 100%;
+
+    img {
+      object-fit: contain;
+      height: 100%;
+      width: 100%;
+      display: block;
+      margin: auto;
+    }
+  }
+
 }

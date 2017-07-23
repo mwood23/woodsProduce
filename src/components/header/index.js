@@ -8,7 +8,7 @@ import Heading from '../heading';
 export default class Header extends Component {
 	// This handles opening and closing the hamburger menu on mobile
 	// Also controls whether a user has scrolled or not on the page
-	state = { open:false, scrolled:false, showModal: false, phoneCopied: false };
+	state = { open:false, scrolled:false, showModal: false, phoneCopied: false, emailCopied: false };
 
 	// This handle changing the nav bar color on scroll
 	componentDidMount() {
@@ -75,19 +75,30 @@ export default class Header extends Component {
 		 }, 0);
 	}
 
-	copyToClipboard = (e) => {
+	copyToClipboard = (e, value) => {
 
 		// It looks like you can only copy to clipboard from inputs that are on the dom. This creates an element a user will not see with the phone number to place it on their clipboard.
 		// https://stackoverflow.com/questions/31593297/using-execcommand-javascript-to-copy-hidden-text-to-clipboard
+
+		console.log(value);
 		var tempInput = document.createElement("input");
     tempInput.style = "position: absolute; left: -1000px; top: -1000px;";
-    tempInput.value = '2769528365';
+
+		if (value === 'phone') {
+			tempInput.value = '2769528365';
+		} else if(value === 'email') {
+			tempInput.value = 'jonathon@woodsproduce.net';
+		}
     document.body.appendChild(tempInput);
     tempInput.select();
     document.execCommand("copy");
     document.body.removeChild(tempInput);
 
-		this.setState({ phoneCopied: true });
+		if (value === 'phone') {
+			this.setState({ phoneCopied: true, emailCopied: false });
+		} else if(value === 'email') {
+			this.setState({ phoneCopied: false, emailCopied: true });
+		}
 	}
 
 	viewChange = (event) => {
@@ -96,11 +107,22 @@ export default class Header extends Component {
 		}
 	};
 
-	render({ url }, { open, scrolled, showModal, phoneCopied, ...props }) {
+	render({ url }, { open, scrolled, showModal, phoneCopied, emailCopied, ...props }) {
 
-		let copyNumber = <span onClick={this.copyToClipboard}>Copy</span>
+		let copyNumber = <span onClick={(event) => {this.copyToClipboard(event, 'phone')}}>Copy</span>
+		let copyEmail = <span onClick={(event) => {this.copyToClipboard(event, 'email')}}>Copy</span>
 		if (phoneCopied) {
-			copyNumber = <img src="../../assets/checkmark/checkmark.svg" />
+			// copyNumber = <img className={style.copyImage} src="../../assets/checkmark/checkmark.svg" />
+
+			copyNumber = <object className={style.copyImage} data="../../assets/checkmark/checkmark.svg" type="image/svg+xml">
+			  {/* <img src="yourfallback.jpg" /> */}
+			</object>
+		}
+
+		if (emailCopied) {
+			copyEmail = <object className={style.copyImage} data="../../assets/checkmark/checkmark.svg" type="image/svg+xml">
+			  {/* <img src="yourfallback.jpg" /> */}
+			</object>
 		}
 
 		return (
@@ -138,7 +160,7 @@ export default class Header extends Component {
 						<p> and ask for Jonathon. He'll be able to answer any questions you have about buying, procurement, cross-docking, or anything else.</p>
 					</div>
 					<div>
-						<p>Rather email? Please send a message to <b>jonathon@woodsproduce.com</b></p>
+						<p>Rather email? Please send a message to <b>jonathon@woodsproduce.com</b> {copyEmail}</p>
 						<p>Need to fax? <b>276-952-2974</b></p>
 					</div>
 				</ReactModal>
