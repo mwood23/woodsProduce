@@ -2,11 +2,12 @@ import { h, Component } from 'preact';
 import cx from 'classnames';
 import { Link } from 'preact-router/match';
 import style from './style';
+import ReactModal from 'react-modal'
 
 export default class Header extends Component {
 	// This handles opening and closing the hamburger menu on mobile
 	// Also controls whether a user has scrolled or not on the page
-	state = { open:false, scrolled:false };
+	state = { open:false, scrolled:false, showModal: false };
 
 	// This handle changing the nav bar color on scroll
 	componentDidMount() {
@@ -59,15 +60,29 @@ export default class Header extends Component {
 
 	toggle = () => this.setState({ open: !this.state.open });
 
+	handleOpenModal = () => this.setState({ showModal: true });
+
+	handleCloseModal = (e) => {
+		this.setState({ showModal: false });
+
+		// This was getting called before the re-render which was causing the fadeOut class to be appeneded to the wrong element. Worst case if this doesn't work is that the modal closes with no fade out animation.
+		setTimeout(() =>{
+			let modalOverlay = document.getElementsByClassName('ReactModal__Overlay');
+			let modalBody = document.getElementsByClassName('ReactModal__Content');
+			modalOverlay[0].classList.add(style.fadeOut)
+			modalBody[0].classList.add(style.fadeOut)
+		 }, 0);
+	}
+
 	viewChange = (event) => {
 		if (window.location.pathname !== event.target.pathname) {
 			this.setState({ open:false, scrolled:false });
 		}
 	};
 
-	render({ url }, { open, scrolled, ...props }) {
+	render({ url }, { open, scrolled, showModal, ...props }) {
 		return (
-			<header class={cx(style.header, open && style.open, scrolled && style.scrolled)}>
+			<header className={cx(style.header, open && style.open, scrolled && style.scrolled)}>
 				<Link activeClassName={style.active} onClick={this.viewChange} href="/">
 					<img src="../../assets/wplogo1.png" />
 				</Link>
@@ -82,7 +97,18 @@ export default class Header extends Component {
 					{/* TODO: Do something here */}
 					{/* <Link activeClassName={style.active} onClick={this.viewChange} href="/"></Link> */}
 
-					<button>Contact Us</button>
+					<button onClick={this.handleOpenModal}>Contact Us</button>
+
+					<ReactModal
+           isOpen={this.state.showModal}
+           contentLabel="onRequestClose Example"
+					 overlayClassName={cx(style.modalOverlay)}
+					 className={style.modal}
+					 closeTimeoutMS={300}
+           onRequestClose={this.handleCloseModal}>
+          		<p>Modal text!</p>
+          		<button onClick={this.handleCloseModal}>Close Modal</button>
+        	</ReactModal>
 				</nav>
 				<Hamburgler open={open} scrolled={scrolled} onClick={this.toggle} />
 			</header>
