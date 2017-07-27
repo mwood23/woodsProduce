@@ -36,65 +36,7 @@
         box-shadow: 0 0 5px 1px #969696;
       }
     }
-    @easing: ease-in-out;
 
-    button[data-wipe] {
-      display: inline-block;
-      padding: 12px 18px;
-      font-size: 16px;
-      text-decoration: none;
-      position: relative;
-      border: 2px solid @woods-produce-green;
-      background-color: @woods-produce-green;
-      border-radius: 3px;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      text-align: left;
-      color: #FAFAFA;
-      overflow: hidden;
-      @media (max-width: @x-small) {
-        margin-top: 1rem;
-      }
 
-      &:after,
-      &:before {
-        content: attr(data-wipe);
-        padding-top: inherit;
-        padding-bottom: inherit;
-        white-space: nowrap;
-        position: absolute;
-        top: 0;
-        overflow: hidden;
-        color: @woods-produce-green;
-        background: #FAFAFA;
-      }
-
-      &:before {
-        left: 0;
-        text-indent: 18px;
-        width: 0;
-      }
-
-      &:after {
-        padding-left: inherit;
-        padding-right: inherit;
-        left: 100%;
-        text-indent: calc(-100% - 34px);
-        transition: 0.2s @easing;
-      }
-
-      &:hover {
-        &:before {
-          width: 100%;
-          transition: width 0.2s @easing;
-        }
-
-        &:after {
-          left: 0;
-          text-indent: 0;
-          transition: 0s 0.2s @easing;
-        }
-      }
-    }
   }
 }

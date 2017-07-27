@@ -1,4 +1,6 @@
 import style from './style';
+import Button from '../button';
+
 
 const Subscribe = () => (
   <div className={style.subscribeContainer}>
@@ -8,7 +10,7 @@ const Subscribe = () => (
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input type="text" name="b_f598d34a2042b816fb9943bab_a84442482e" tabindex="-1" value="" />
         </div>
-        <button type="submit" data-wipe="Subscribe" value="Subscribe" name="subscribe" class="btn">Subscribe</button>
+        <Button text="Subscribe" type="submit" />
       </div>
     </form>
   </div>

@@ -85,7 +85,7 @@ export default class Header extends Component {
     tempInput.style = "position: absolute; left: -1000px; top: -1000px;";
 
 		if (value === 'phone') {
-			tempInput.value = '2769528365';
+			tempInput.value = '2769522971';
 		} else if(value === 'email') {
 			tempInput.value = 'jonathon@woodsproduce.net';
 		}
@@ -155,7 +155,7 @@ export default class Header extends Component {
 					<div>
 						<p>Ready to get started or have a question for us? Please call us at</p>
 						{/* <br /> */}
-						<p className={style.phoneNumber}>276-952-8365 {copyNumber}</p>
+						<p className={style.phoneNumber}>276-952-2971 {copyNumber}</p>
 						{/* <br /> */}
 						<p> and ask for Jonathon. He'll be able to answer any questions you have about buying, procurement, cross-docking, or anything else.</p>
 					</div>

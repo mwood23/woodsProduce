@@ -45,7 +45,7 @@ export default class Products extends Component {
       </SectionPhoto>
       <SectionPhoto image="https://images.pexels.com/photos/8439/food-eggs.jpg?w=940&h=650&auto=compress&cs=tinysrgb" rightAlignedPhoto>
         <Heading text="EGGS AND FLOUR" />
-        <Content text="We have sourced from local suppliers for our eggs and flour for years. Our selection includes:" />
+        <Content text="We have sourced from local suppliers for our eggs and flour for years. Eggs are always in stock and flour orders are customized each week to ensure you have what you need. Our selection includes:" />
         <ul>
           <li>Double-yoked eggs</li>
           <li>Loose and carton eggs</li>
@@ -54,7 +54,7 @@ export default class Products extends Component {
       </SectionPhoto>
       <SectionPhoto image="https://images.pexels.com/photos/499173/pexels-photo-499173.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
         <Heading text="PACKAGING" />
-        <Content text="Full assortment of packaging. We have everything from t-shirt to paper bags for your packaging needs" />
+        <Content text="Full assortment of packaging. We have everything from t-shirt to paper bags for your packaging needs. In addition, we offer display baskets, bins, and break bulk on new bins and boxes." />
       </SectionPhoto>
       <Section>
         <Heading text="DIDN'T SEE WHAT YOU WERE LOOKING FOR?" />
