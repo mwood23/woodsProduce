@@ -1,14 +1,14 @@
 import style from './style';
 import Heading from '../heading';
-import Map from '../map';
+import GoogleMapView from '../map';
 
-const VideoSection = ({children}) => (
+const MapSection = ({children}) => (
   <section className={style.section}>
     <Heading text="DELIVERY AREA" />
     <div className={style.mapContainer}>
-      <Map />
+      <GoogleMapView />
     </div>
   </section>
 );
 
-export default VideoSection
+export default MapSection
