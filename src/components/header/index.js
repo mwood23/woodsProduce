@@ -64,7 +64,7 @@ export default class Header extends Component {
 	handleOpenModal = () => this.setState({ showModal: true });
 
 	handleCloseModal = (e) => {
-		this.setState({ showModal: false });
+		this.setState({ showModal: false, phoneCopied: false, emailCopied: false });
 
 		// This was getting called before the re-render which was causing the fadeOut class to be appeneded to the wrong element. Worst case if this doesn't work is that the modal closes with no fade out animation.
 		setTimeout(() =>{

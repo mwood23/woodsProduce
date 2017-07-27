@@ -1,7 +1,100 @@
 @import '~style/helpers';
 
-.heading {
-  h1 {
-    text-align: center;
+.subscribeContainer {
+  margin: 1rem 0;
+  max-width: 40rem;
+  width: 100%;
+
+  form {
+    width: 100%;
+  }
+
+  .inputContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .emailInput {
+      width: 60%;
+      border-radius: 5px;
+      outline: none;
+      border: solid 1px gainsboro;
+      transition: box-shadow 0.3s, border 0.3s;
+      margin-right: 2rem;
+      display: inline-block;
+      vertical-align: bottom;
+      @media (max-width: @x-small) {
+        width: 100%;
+        margin: 0;
+      }
+
+      &:focus {
+        border: solid 1px #707070;
+        -webkit-box-shadow: 0 0 5px 1px #969696;
+        -moz-box-shadow: 0 0 5px 1px #969696;
+        box-shadow: 0 0 5px 1px #969696;
+      }
+    }
+    @easing: ease-in-out;
+
+    button[data-wipe] {
+      display: inline-block;
+      padding: 12px 18px;
+      font-size: 16px;
+      text-decoration: none;
+      position: relative;
+      border: 2px solid @woods-produce-green;
+      background-color: @woods-produce-green;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-align: left;
+      color: #F1F1F2;
+      overflow: hidden;
+      @media (max-width: @x-small) {
+        margin-top: 1rem;
+      }
+
+      &:after,
+      &:before {
+        content: attr(data-wipe);
+        padding-top: inherit;
+        padding-bottom: inherit;
+        white-space: nowrap;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        color: @woods-produce-green;
+        background: #F1F1F2;
+      }
+
+      &:before {
+        left: 0;
+        text-indent: 18px;
+        width: 0;
+      }
+
+      &:after {
+        padding-left: inherit;
+        padding-right: inherit;
+        left: 100%;
+        text-indent: calc(-100% - 34px);
+        transition: 0.2s @easing;
+      }
+
+      &:hover {
+        &:before {
+          width: 100%;
+          transition: width 0.2s @easing;
+        }
+
+        &:after {
+          left: 0;
+          text-indent: 0;
+          transition: 0s 0.2s @easing;
+        }
+      }
+    }
   }
 }

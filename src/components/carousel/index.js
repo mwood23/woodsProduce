@@ -8,14 +8,26 @@ export default class Carousel extends Component {
 
     render() {
 
+      // Shows the video or header image depending on device width
+      const mq = window.matchMedia( "(min-width: 500px)" );
+      let items
+      if (mq.matches) {
+        // window width is at least 500px
+        items = 5
+      } else {
+        // window width is less than 500px
+        items = 3
+      }
+
       return (
         <OwlCarousel
             className="owl-theme"
-            loop margin={10}
+            loop
+            margin={10}
             dots={false}
             autoplay
             autoplayTimeout={3000}
-            items={5}
+            items={items}
         >
             <CarouselItem image="http://rainierfruit.com/wp-content/themes/rainier/images/rainier-fruit-old.png"></CarouselItem>
             <CarouselItem image="http://www.producegrower.com/FileUploads/image/RedSunFarmsLogo.png?w=736&h=414&mode=crop"></CarouselItem>
