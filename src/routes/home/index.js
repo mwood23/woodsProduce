@@ -14,6 +14,8 @@ import FeaturedList from '../../components/featuredList';
 import Carousel from '../../components/carousel';
 import GoogleMapView from '../../components/map';
 import Subscribe from '../../components/subscribe';
+import LazyImage from '../../components/lazyImage';
+import LazyLoad from 'react-lazyload';
 
 export default class Home extends Component {
 
@@ -27,7 +29,16 @@ export default class Home extends Component {
       pageHero = <VideoBackground />
     } else {
       // window width is less than 500px
-      pageHero = <HomeHero image={"https://lh3.googleusercontent.com/J-UeSx30SxoQedBNU3l9RHB2wdt9xAjIbxQyn4ejIBTDnjzzhzZiCbv7Amk2y8nDpwhxyFXKVMIhfpDPnsGKQZqjU8H3vXKnku1_AlTOZSLFXR1W5JUhsoBS2rI5EZQN8za2cYUbhEA_mFX38prdM8Lbj-uc2hu77udaMpNnuHDYL5-RgdYr1xdcp4v5RdZkKm8g98kRaiuzMNgWUPEiS24DSvx5iZyHPSE8nsqitAfL5WBQsun577qasyc24mFxVmA_-vZlIqfiYzPZ6Z29_PRpN1CWYsDlqJC2ZWeNAHo5uT55vu31nQhU25FBVRoW9WStK1TP18KDVJ2RVLIFS-PkvFP8ekFuq177VlSCLmhOCyZRYhAgXGwRb0fdtcyCC6MfDmpCwLdyTDPcH53ProWMkusZjQzMMpQs_SlDq7wmtygQqtqazYXGSClXEupat_Y2NH8GtOx4k_8a67-WWPgvG5r1O5ezf3KXgnobvEHcZN_xObHNwLz6Mn3jZT79U420SPYi8-oX5ATY8SjIG9F-L8un-WUn2a4aTIcEgwcdOQVViHg5wcccgmamUv1oCzgNQ9MfKQnjq7UmS1BdoSluo2XcXlS5a9_ywHUICD_A5k6SXWioslF4=w927-h521-no"} />
+      pageHero = <HomeHero image={<img sizes="(max-width: 927) 100vw, 927"
+    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_927/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 927w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_851/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 851w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_741/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 741w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_617/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 617w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_485/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 485w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_300/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 300w"
+    src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png"
+    alt=""
+  />} />
     }
 
     return (
@@ -37,7 +48,9 @@ export default class Home extends Component {
           <Heading text="WHERE FRESH MEETS FRIENDLY" />
           <Content text="Family owned since 1987, Wood's Produce has grown from its humble roots into a leading, full line perishable foods wholesaler."/>
           <WhyUsList />
-          <Carousel></Carousel>
+          <LazyLoad height={300} offset={50}>
+            <Carousel></Carousel>
+          </LazyLoad>
         </Section>
         <MapSection />
         <Section>

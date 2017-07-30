@@ -34,6 +34,7 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-google-maps": "^7.2.0",
+    "react-lazyload": "^2.2.7",
     "react-modal": "^2.2.2",
     "react-owl-carousel": "^2.2.0",
     "react-player": "^0.18.0"

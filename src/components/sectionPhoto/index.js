@@ -1,4 +1,5 @@
 import style from './style';
+import LazyImage from '../lazyImage';
 
 function SectionPhoto({children, image, rightAlignedPhoto}) {
 
@@ -8,14 +9,14 @@ function SectionPhoto({children, image, rightAlignedPhoto}) {
         {children}
       </div>
       <div className={style.photoContainer}>
-        <img src={image} />
+        <LazyImage image={image} height={300} />
       </div>
     </section>)
   }
 
   return (<section className={style.sectionPhoto}>
     <div className={style.photoContainer}>
-      <img src={image} />
+      <LazyImage image={image} height={300} />
     </div>
     <div className={style.contentContainer}>
       {children}

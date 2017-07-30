@@ -1,8 +1,9 @@
 import style from './style';
+import LazyImage from '../lazyImage';
 
 const CarouselItem = ({image}) => (
   <div className={style.carouselItem}>
-    <img src={image} />
+    {image}
   </div>
 );
 
