@@ -6,7 +6,7 @@ const Subscribe = () => (
   <div className={style.subscribeContainer}>
     <form action="//woodsproduce.us10.list-manage.com/subscribe/post?u=f598d34a2042b816fb9943bab&amp;id=a84442482e" method="post" name="mc-embedded-subscribe-form" class="validate" target="noopener" novalidate>
       <div className={style.inputContainer}>
-        <input className={style.emailInput} type="email" value="" name="EMAIL" placeholder="email address" required />
+        <input className={style.emailInput} type="email" value="" aria-label="email address" name="EMAIL" placeholder="email address" required />
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
           <input type="text" name="b_f598d34a2042b816fb9943bab_a84442482e" tabindex="-1" value="" />
         </div>

@@ -37,7 +37,7 @@ export default class Home extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_485/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 485w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_300/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 300w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png"
-    alt=""
+    alt="Welcome Header Wood's Produce Truck"
   />} />
     }
 

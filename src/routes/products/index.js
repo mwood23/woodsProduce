@@ -25,7 +25,7 @@ export default class Products extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_799/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 799w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_300/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 300w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg"
-    alt=""
+    alt="Peaches"
   />} heading="Our Products" />
       <Section>
         <Heading text="A LITTLE BIT OF EVERYTHING" />
@@ -36,7 +36,7 @@ export default class Products extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_374/v1501372285/Wood%27s%20Produce%20Fruits%20and%20Vegetables.jpg 374w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_150/v1501372285/Wood%27s%20Produce%20Fruits%20and%20Vegetables.jpg 150w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372285/Wood%27s%20Produce%20Fruits%20and%20Vegetables.jpg"
-    alt=""
+    alt="Fruits and Vegetables"
   />}>
         <Heading text="PRODUCE" />
         <Content text="Relationships run the perishable foods industry. We have cultivated relationships with top growers in the nation to buy direct so we can give you fresher, better quality product for a cheaper price." />
@@ -48,7 +48,7 @@ export default class Products extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_311/v1501377264/Wood%27s%20Produce%20Candy%20Home%20Overview.jpg 311w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_180/v1501377264/Wood%27s%20Produce%20Candy%20Home%20Overview.jpg 180w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501377264/Wood%27s%20Produce%20Candy%20Home%20Overview.jpg"
-    alt=""
+    alt="Candy Assortment"
   />} rightAlignedPhoto>
         <Heading text="CANDY" />
         <Content text="Old fashioned candy be hard to find from wholesalers. We carry a full assortment of candy that has everything from double-dipped peanuts to Pixie Stix. Some of our top sellers include:" />
@@ -63,7 +63,7 @@ export default class Products extends Component {
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_400/v1501377265/Wood%27s%20Produce%20Jars%20Home%20Overview.jpg 400w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_150/v1501377265/Wood%27s%20Produce%20Jars%20Home%20Overview.jpg 150w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501377265/Wood%27s%20Produce%20Jars%20Home%20Overview.jpg"
-    alt=""
+    alt="Dutch Kettle Jar Goods"
   />}>
         <Heading text="JAR GOODS" />
         <Content text="We carry a full selection of jams, honey, jellies, relishes, and pickled goods from:" />
@@ -75,7 +75,7 @@ export default class Products extends Component {
           <li>Private label options and more!</li>
         </ul>
       </SectionPhoto>
-      <SectionPhoto image={<img src="https://images.pexels.com/photos/8439/food-eggs.jpg?w=940&h=650&auto=compress&cs=tinysrgb" />} rightAlignedPhoto>
+      <SectionPhoto image={<img src="https://images.pexels.com/photos/8439/food-eggs.jpg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Eggs" />} rightAlignedPhoto>
         <Heading text="EGGS AND FLOUR" />
         <Content text="We have sourced from local suppliers for our eggs and flour for years. Eggs are always in stock and flour orders are customized each week to ensure you have what you need. Our selection includes:" />
         <ul>
@@ -84,7 +84,7 @@ export default class Products extends Component {
           <li>Big Spring Mill flour</li>
         </ul>
       </SectionPhoto>
-      <SectionPhoto image={<img src="https://images.pexels.com/photos/499173/pexels-photo-499173.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" />}>
+      <SectionPhoto image={<img src="https://images.pexels.com/photos/499173/pexels-photo-499173.jpeg?w=940&h=650&auto=compress&cs=tinysrgb" alt="Packaging" />}>
         <Heading text="PACKAGING" />
         <Content text="Full assortment of packaging. We have everything from t-shirt to paper bags for your packaging needs. In addition, we offer display baskets, bins, and break bulk on new bins and boxes." />
       </SectionPhoto>

@@ -1,5 +1,41 @@
-@import url('https://fonts.googleapis.com/css?family=Bitter|Lato|Merriweather|Roboto+Slab|Titillium+Web:200');
-@import 'helpers';
+// @import url('https://fonts.googleapis.com/css?family=Bitter|Lato|Titillium+Web:200');
+// @import 'helpers';
+
+@woods-produce-green: #20603C;
+@default-font-color: #333;
+
+@nav-bar-height: 4rem;
+@nav-bar-mobile-breakpoint: 875px;
+@section-min-height: 15rem;
+@small: 770px;
+@x-small: 590px;
+
+.content {
+	padding-top: @nav-bar-height;
+}
+
+.panel {
+	padding: 1rem;
+}
+
+.fill() {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.scroll() {
+	overflow: auto;
+	overflow-scrolling: touch;
+
+	& > .inner {
+		position: relative;
+		transform: translateZ(0);
+		overflow: hidden;
+	}
+}
 
 html, body {
 	height: 100%;

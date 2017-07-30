@@ -14,7 +14,7 @@ const ProductTiles = () => (
      	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_404/v1501372285/Wood%27s%20Produce%20Fruits%20and%20Vegetables%20Peaches%20and%20Watermelons.jpg 404w,
      	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372285/Wood%27s%20Produce%20Fruits%20and%20Vegetables%20Peaches%20and%20Watermelons.jpg 200w"
         src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372285/Wood%27s%20Produce%20Fruits%20and%20Vegetables%20Peaches%20and%20Watermelons.jpg"
-        alt=""
+        alt="Peaches and Watermelons"
       />}
       url="/products" />
     <ProductTile
@@ -26,16 +26,16 @@ const ProductTiles = () => (
      	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_438/v1501377278/Wood%27s%20Produce%20Candy%20Products.jpg 438w,
      	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501377278/Wood%27s%20Produce%20Candy%20Products.jpg 200w"
         src="https://res.cloudinary.com/woodsproduce/image/upload/v1501377278/Wood%27s%20Produce%20Candy%20Products.jpg"
-        alt=""
+        alt="Candy Assortments"
       />}
       url="/products" />
     <ProductTile
       text="Packaging"
-      image={<img src="http://www.broncopackaging.com/images/products/ph_products_tomatoesSTACK.jpg" />}
+      image={<img src="http://www.broncopackaging.com/images/products/ph_products_tomatoesSTACK.jpg" alt="Tomato Box" />}
       url="/products" />
     <ProductTile
       text="Eggs"
-      image={<img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/3SE4H5RT0T.jpg" />}
+      image={<img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/3SE4H5RT0T.jpg" alt="Eggs" />}
       url="/products" />
     <ProductTile
       text="Jar Goods"
@@ -46,7 +46,7 @@ const ProductTiles = () => (
          	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_520/v1501377264/Wood%27s%20Produce%20Jars%20Product%20List.jpg 520w,
          	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501377264/Wood%27s%20Produce%20Jars%20Product%20List.jpg 200w"
             src="https://res.cloudinary.com/woodsproduce/image/upload/v1501377264/Wood%27s%20Produce%20Jars%20Product%20List.jpg"
-            alt=""
+            alt="Dutch Kettle Jar Goods"
           />}
       url="/products" />
   </div>

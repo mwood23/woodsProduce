@@ -22,7 +22,7 @@ export default class FoodSafety extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_899/v1501372719/Wood%27s%20Produce%20Header%20Produce%20Peppers.jpg 899w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_300/v1501372719/Wood%27s%20Produce%20Header%20Produce%20Peppers.jpg 300w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372719/Wood%27s%20Produce%20Header%20Produce%20Peppers.jpg"
-    alt=""
+    alt="Yellow Peppers"
   />} heading="Food Safety" />
         <Section>
           <Heading text="THE HEART OF WHAT WE DO" />
@@ -33,7 +33,7 @@ export default class FoodSafety extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_380/v1501372285/Potato%20Cooler%20Wood%27s%20Produce.jpg 380w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_150/v1501372285/Potato%20Cooler%20Wood%27s%20Produce.jpg 150w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372285/Potato%20Cooler%20Wood%27s%20Produce.jpg"
-    alt=""
+    alt="Wood's Produce Potato Cooler"
   />}>
           <Heading text="FOOD SAFETY PROGRAMS" />
           {/* <Content text="Food safety is the primary focus in everything we do. We require that all of our suppliers are audited by the Global Food Safety Initiatives (GFSI) benchmarks and deliver on refrigerated trucks. Our facilities have achieved Safe Quality Foods (SQF) Level 2 and the USDA's Good Handling & Agricultural Practices certifications." /> */}
@@ -50,7 +50,7 @@ export default class FoodSafety extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_387/v1501372285/Citrus%20Cooler%20Wood%27s%20Produce.jpg 387w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_150/v1501372285/Citrus%20Cooler%20Wood%27s%20Produce.jpg 150w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372285/Citrus%20Cooler%20Wood%27s%20Produce.jpg"
-    alt=""
+    alt="Wood's Produce Citrus Cooler"
   />} rightAlignedPhoto>
           <ul>
             <li>Use of all electric warehouse equipment to prevent dangerous fumes from coming in contact with product</li>

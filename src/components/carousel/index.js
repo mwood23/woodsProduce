@@ -36,7 +36,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_95/v1501368912/Bolthouse%20Farms.jpg 95w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501368912/Bolthouse%20Farms.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501368912/Bolthouse%20Farms.jpg"
-    alt=""
+    alt="Bolthouse Farms"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372284/Herndon%20Farms.jpg 200w,
@@ -45,7 +45,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_103/v1501372284/Herndon%20Farms.jpg 103w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372284/Herndon%20Farms.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Herndon%20Farms.jpg"
-    alt=""
+    alt="Herndon Farms"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372284/IPC.jpg 200w,
@@ -54,7 +54,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_98/v1501372284/IPC.jpg 98w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372284/IPC.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/IPC.jpg"
-    alt=""
+    alt="IPC"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372284/Wonderful%20Citrus.jpg 200w,
@@ -63,7 +63,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_93/v1501372284/Wonderful%20Citrus.jpg 93w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372284/Wonderful%20Citrus.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Wonderful%20Citrus.jpg"
-    alt=""
+    alt="Wonderful Citrus"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372284/Calavo.jpg 200w,
@@ -72,7 +72,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_83/v1501372284/Calavo.jpg 83w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372284/Calavo.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Calavo.jpg"
-    alt=""
+    alt="Calavo"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372284/Sunglo.jpg 200w,
@@ -81,7 +81,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_92/v1501372284/Sunglo.jpg 92w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372284/Sunglo.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Sunglo.jpg"
-    alt=""
+    alt="Sunglo Potatoes"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372284/Form%20Boise.jpg 200w,
@@ -90,7 +90,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_89/v1501372284/Form%20Boise.jpg 89w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372284/Form%20Boise.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Form%20Boise.jpg"
-    alt=""
+    alt="Fort Boise Onions"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372284/Del%20Monte.jpg 200w,
@@ -99,7 +99,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_87/v1501372284/Del%20Monte.jpg 87w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372284/Del%20Monte.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Del%20Monte.jpg"
-    alt=""
+    alt="Del Monte"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372284/Dutch%20Valley.jpg 200w,
@@ -108,7 +108,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_98/v1501372284/Dutch%20Valley.jpg 98w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372284/Dutch%20Valley.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Dutch%20Valley.jpg"
-    alt=""
+    alt="Dutch Valley"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372285/Tanimura%20and%20Antle.jpg 200w,
@@ -117,7 +117,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_98/v1501372285/Tanimura%20and%20Antle.jpg 98w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372285/Tanimura%20and%20Antle.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372285/Tanimura%20and%20Antle.jpg"
-    alt=""
+    alt="Tanimura and Antle"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 736) 100vw, 736"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372284/Red%20Sun.png 200w,
@@ -126,7 +126,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_91/v1501372284/Red%20Sun.png 91w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372284/Red%20Sun.png 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Red%20Sun.png"
-    alt=""
+    alt="Red Sun"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372285/River%20Ranch.jpg 200w,
@@ -135,7 +135,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_98/v1501372285/River%20Ranch.jpg 98w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372285/River%20Ranch.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372285/River%20Ranch.jpg"
-    alt=""
+    alt="River Ranch"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372285/Boskovich%20Farms.jpg 200w,
@@ -144,7 +144,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_96/v1501372285/Boskovich%20Farms.jpg 96w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372285/Boskovich%20Farms.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372285/Boskovich%20Farms.jpg"
-    alt=""
+    alt="Boskovich Farms"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372287/Columbine.jpg 200w,
@@ -153,7 +153,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_96/v1501372287/Columbine.jpg 96w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372287/Columbine.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372287/Columbine.jpg"
-    alt=""
+    alt="Columbine Farms"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372286/Dole.jpg 200w,
@@ -162,7 +162,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_97/v1501372286/Dole.jpg 97w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372286/Dole.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372286/Dole.jpg"
-    alt=""
+    alt="Dole"
   />}></CarouselItem>
             <CarouselItem image={<img sizes="(max-width: 500) 10vw, (max-width: 1500) 18vw, 210"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_200/v1501372287/Crown%20Orchards.jpg 200w,
@@ -171,7 +171,7 @@ export default class Carousel extends Component {
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_95/v1501372287/Crown%20Orchards.jpg 95w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_50/v1501372287/Crown%20Orchards.jpg 50w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372287/Crown%20Orchards.jpg"
-    alt=""
+    alt="Crown Orchards"
   />}></CarouselItem>
         </OwlCarousel>
       );
