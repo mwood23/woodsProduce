@@ -35,10 +35,10 @@ export default class OurStory extends Component {
           <Content text="The groundwork for Wood’s Produce Company was laid in the mid-1970s when Mark Wood moved to Meadows of Dan, VA and found a job growing, packing, and delivering fresh cabbage for a family farm called Terry’s Produce. Working with the Terry family ingrained Mark with the core values of hard work, integrity, and dedication to the customer that Wood’s Produce Company has been built on from Day 1." />
         </SectionPhoto>
         <SectionPhoto image={<img sizes="(max-width: 400) 100vw, 400"
-    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_400/v1501392101/Wood%27s%20Produce%20Warehouse%20OLD.jpg 400w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_150/v1501392101/Wood%27s%20Produce%20Warehouse%20OLD.jpg 150w"
-    src="https://res.cloudinary.com/woodsproduce/image/upload/v1501392101/Wood%27s%20Produce%20Warehouse%20OLD.jpg"
-    alt="Old Wood's Produce Warehouse"
+    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_400/v1501564755/Wood%27s%20Produce%20Warehouse%20OLD.jpg 400w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_150/v1501564755/Wood%27s%20Produce%20Warehouse%20OLD.jpg 150w"
+    src="https://res.cloudinary.com/woodsproduce/image/upload/v1501564755/Wood%27s%20Produce%20Warehouse%20OLD.jpg"
+    alt=""
   />} rightAlignedPhoto>
           <Content text="Since 1948, Terry’s Produce & Plants had been cultivated a loyal customer base by delivering fresh, “mountain-grown” peppers, tomatoes, squash, cabbage, etc. that they grew. During his years of delivering for Terry’s, many of their customers asked him why they didn’t have other produce essentials like bananas, lettuce, and onions like other produce companies. Mark knew that to keep many of the Terry’s long-time customers happy, they needed to expand their product offering." />
         </SectionPhoto>
@@ -46,11 +46,11 @@ export default class OurStory extends Component {
           <Content text="Armed with only a pickup truck and $200, Mark backed up to the dock at W.R. Vernon Produce in Winston-Salem, NC early one morning in the fall of 1983. He bought all the produce he could afford, and then stopped at businesses along his way home, selling out before he got back. After such a successful first trip, he was back at W.R. Vernon the next morning, ready to buy even more. The next four years, Mark helped Terry’s Produce & Plants grow by selling what they grew on the farm and filling in with what he could buy in Winston-Salem. When the Terry family decided to quit growing produce in 1987, Mark decided the best way to provide for his wife Carol and family was to carry on the produce business. He bought Terry’s Produce & Plants, changed the name to Wood’s Produce Company, and worked tirelessly, day after day, to take care of his customers better than anyone else could. Within 12 years, Mark and Carol had built Wood’s Produce Company into a $5 million dollar per year business, working out of a 3,000-square foot cabbage packing shed turned produce warehouse." />
         </Section>
         <SectionPhoto image={<img sizes="(max-width: 400) 100vw, 400"
-    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_400/v1501391731/Wood%27s%20Produce%20Warehouse%20OLD.jpg 400w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_373/v1501391731/Wood%27s%20Produce%20Warehouse%20OLD.jpg 373w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_150/v1501391731/Wood%27s%20Produce%20Warehouse%20OLD.jpg 150w"
-    src="https://res.cloudinary.com/woodsproduce/image/upload/v1501391731/Wood%27s%20Produce%20Warehouse%20OLD.jpg"
-    alt="New Apple Cooler"
+    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_400/v1501564702/Apple%20Cooler%20Completed.jpg 400w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_373/v1501564702/Apple%20Cooler%20Completed.jpg 373w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_150/v1501564702/Apple%20Cooler%20Completed.jpg 150w"
+    src="https://res.cloudinary.com/woodsproduce/image/upload/v1501564702/Apple%20Cooler%20Completed.jpg"
+    alt=""
   />} rightAlignedPhoto>
           <Content text="In 2000, Wood’s Produce Company moved to its current location and has been thriving ever since while remaining a true family business. After graduating from the University of Virginia in 2010, their son Jonathon came back to join the family business. Still growing to this day, in 2012, we completed construction on a new state-of-the-art cooler facility with capacity for an additional 40 trailer-loads of produce." />
         </SectionPhoto>

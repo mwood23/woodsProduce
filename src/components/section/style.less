@@ -9,6 +9,11 @@
   flex-direction: column;
   position: relative;
 
+  // Silly IE 11 fix
+  div {
+    width: 100%;
+  }
+
   @media (max-width: @x-small) {
     padding: .1rem 1rem;
   }
