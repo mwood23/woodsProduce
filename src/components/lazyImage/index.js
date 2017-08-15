@@ -2,7 +2,7 @@ import style from './style';
 import LazyLoad from 'react-lazyload';
 
 const LazyImage = ({image, height}) => (
-  <LazyLoad offset={100} height={height} once>
+  <LazyLoad offset={200} height={height} once>
     {image}
   </LazyLoad>
 );

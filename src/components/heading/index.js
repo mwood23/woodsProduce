@@ -2,7 +2,7 @@ import style from './style';
 
 const Heading = ({text}) => (
   <div className={style.heading}>
-    <h1>{text}</h1>
+    <h2>{text}</h2>
   </div>
 );
 

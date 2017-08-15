@@ -1,12 +1,12 @@
 {
   "name": "woodsProduce",
   "version": "1.0.0",
-  "description": "Website for a full line produce wholesaler in the mid Atlantic",
+  "description": "Website for a full line perishable foods wholesaler in the Mid-Atlantic",
   "main": "index.js",
   "scripts": {
     "test": "eslint src && preact test",
     "start": "if-env NODE_ENV=production && npm run -s serve || npm run -s dev",
-    "build": "preact build",
+    "build": "preact build --template src/template.html --no-prerender && firebase deploy",
     "serve": "preact build && preact serve",
     "dev": "preact watch"
   },

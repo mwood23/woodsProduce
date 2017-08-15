@@ -1,7 +1,7 @@
 import style from './style';
 
 const Content = ({text}) => (
-  <div>
+  <div className={style.copy}>
     {text}
   </div>
 );

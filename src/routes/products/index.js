@@ -7,6 +7,7 @@ import Section from '../../components/section';
 import Content from '../../components/content';
 import Heading from '../../components/heading';
 import Subscribe from '../../components/subscribe';
+import Footer from '../../components/footer';
 
 export default class Products extends Component {
 
@@ -93,6 +94,7 @@ export default class Products extends Component {
         <Content text="Most likely we can get it for you. Give us a call to tell us more. Looking for deals? We have a weekly newsletter that features hot deals! Sign up here:" />
         <Subscribe />
       </Section>
+      <Footer />
     </div>
     );
   }

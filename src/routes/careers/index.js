@@ -4,6 +4,7 @@ import Hero from '../../components/hero'
 import Section from '../../components/section'
 import Heading from '../../components/heading'
 import Content from '../../components/content'
+import Footer from '../../components/footer';
 
 export default class Careers extends Component {
 
@@ -34,8 +35,8 @@ export default class Careers extends Component {
           <Content text={<span>Open positions for Class A/B CDL drivers. Wood's Produce delivers to 5 states with daily routes to our customers. <b>Home every night.</b></span>} />
           <h2>Warehouse Associate</h2>
           <Content text={<span>A warehouse associate has a variety of responsibilities that includes picking orders, assisting customers, repacking goods, rotating inventory, and ensuring our customers receive the best product possible. Previous experience in a warehouse with active forklift certification is preferred, but not required.<br />*Must be able to lift over 50 pounds</span>} />
-
         </Section>
+        <Footer />
       </div>
     );
   }

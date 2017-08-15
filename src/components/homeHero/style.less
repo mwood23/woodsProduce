@@ -18,12 +18,24 @@
 	  transform: translate(-50%, -50%);
 		text-align: center;
 
+		@media (max-width: @x-small) {
+			width: 100%;
+			padding: .25rem;
+		}
+
 		h1 {
 			color: white;
 			font-size: 6vw;
-			font-family: 'Titillium', sans-serif;
 			font-weight: 500;
 			margin: 0;
+
+			@media (max-width: @x-small) {
+				font-size: 1.5rem !important;
+			}
+		}
+
+		.greatVibes {
+			font-family: 'Sedgwick Ave', cursive;
 		}
 	}
 }

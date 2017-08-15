@@ -18,14 +18,26 @@
 	position: absolute;
   top: 50%;
   left: 50%;
+	width: 85%;
   transform: translate(-50%, -50%);
 	text-align: center;
 
 	h1 {
 		color: white;
-		font-size: 3.5vw;
-		font-family: 'Titillium', sans-serif;
+		font-size: 4.5vw !important;
 		font-weight: 500;
 		margin: 0;
+
+		@media (max-width: 1000px) {
+			font-size: 3rem !important;
+		}
+
+		@media (max-width: @small) {
+			font-size: 2.5rem !important;
+		}
+	}
+
+	.greatVibes {
+		font-family: 'Sedgwick Ave', cursive;
 	}
 }

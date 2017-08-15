@@ -6,19 +6,20 @@ import Section from '../../components/section';
 import Heading from '../../components/heading';
 import Content from '../../components/content';
 import SectionPhoto from '../../components/sectionPhoto';
+import Footer from '../../components/footer';
 
 export default class OurStory extends Component {
 
   render() {
     return (
       <div>
-        <Hero image={<img sizes="(max-width: 1465) 100vw, 1465"
-    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1465/v1501391730/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 1465w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1369/v1501391730/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 1369w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_928/v1501391730/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 928w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_300/v1501391730/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 300w"
-    src="https://res.cloudinary.com/woodsproduce/image/upload/v1501391730/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg"
-    alt="Little Helper Helping"
+        <Hero image={<img sizes="(max-width: 1465px) 100vw, 1465px"
+    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1465/v1502761460/Wood%27s%20Produce%20Header%20Our%20Story.jpg 1465w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1369/v1502761460/Wood%27s%20Produce%20Header%20Our%20Story.jpg 1369w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_928/v1502761460/Wood%27s%20Produce%20Header%20Our%20Story.jpg 928w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_300/v1502761460/Wood%27s%20Produce%20Header%20Our%20Story.jpg 300w"
+    src="https://res.cloudinary.com/woodsproduce/image/upload/v1502761460/Wood%27s%20Produce%20Header%20Our%20Story.jpg"
+    alt=""
   />} heading="Our Story" />
         <Section>
           <Heading text="WE'RE DEDICATED TO OUR CUSTOMERS" />
@@ -65,6 +66,7 @@ export default class OurStory extends Component {
         <Section>
           <Content text="In an ever-changing produce industry, Wood’s Produce Company has been successful by staying true to our principles of hard work, integrity, delivering the highest quality produce, and making customer satisfaction our top priority." />
         </Section>
+        <Footer />
       </div>
     );
   }

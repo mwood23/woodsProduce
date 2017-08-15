@@ -8,7 +8,7 @@ import Heading from '../heading';
 export default class Header extends Component {
 	// This handles opening and closing the hamburger menu on mobile
 	// Also controls whether a user has scrolled or not on the page
-	state = { open:false, scrolled:false, showModal: false, phoneCopied: false, emailCopied: false };
+	state = { open:false, scrolled:false, showModal: false, emailCopied: false };
 
 	// This handle changing the nav bar color on scroll
 	componentDidMount() {
@@ -64,7 +64,7 @@ export default class Header extends Component {
 	handleOpenModal = () => this.setState({ showModal: true });
 
 	handleCloseModal = (e) => {
-		this.setState({ showModal: false, phoneCopied: false, emailCopied: false });
+		this.setState({ showModal: false, emailCopied: false });
 
 		// This was getting called before the re-render which was causing the fadeOut class to be appeneded to the wrong element. Worst case if this doesn't work is that the modal closes with no fade out animation.
 		setTimeout(() =>{
@@ -77,28 +77,19 @@ export default class Header extends Component {
 
 	copyToClipboard = (e, value) => {
 
-		// It looks like you can only copy to clipboard from inputs that are on the dom. This creates an element a user will not see with the phone number to place it on their clipboard.
+		// It looks like you can only copy to clipboard from inputs that are on the dom. This creates an element a user will not see with the email to place it on their clipboard.
 		// https://stackoverflow.com/questions/31593297/using-execcommand-javascript-to-copy-hidden-text-to-clipboard
 
 		console.log(value);
 		var tempInput = document.createElement("input");
     tempInput.style = "position: absolute; left: -1000px; top: -1000px;";
-
-		if (value === 'phone') {
-			tempInput.value = '2769522971';
-		} else if(value === 'email') {
-			tempInput.value = 'jonathon@woodsproduce.net';
-		}
+		tempInput.value = 'jonathon@woodsproduce.net';
     document.body.appendChild(tempInput);
     tempInput.select();
     document.execCommand("copy");
     document.body.removeChild(tempInput);
 
-		if (value === 'phone') {
-			this.setState({ phoneCopied: true, emailCopied: false });
-		} else if(value === 'email') {
-			this.setState({ phoneCopied: false, emailCopied: true });
-		}
+		this.setState({ emailCopied: true });
 	}
 
 	viewChange = (event) => {
@@ -107,18 +98,9 @@ export default class Header extends Component {
 		}
 	};
 
-	render({ url }, { open, scrolled, showModal, phoneCopied, emailCopied, ...props }) {
+	render({ url }, { open, scrolled, showModal, emailCopied, ...props }) {
 
-		let copyNumber = <span onClick={(event) => {this.copyToClipboard(event, 'phone')}}>Copy</span>
 		let copyEmail = <span onClick={(event) => {this.copyToClipboard(event, 'email')}}>Copy</span>
-		if (phoneCopied) {
-			// copyNumber = <img className={style.copyImage} src="../../assets/checkmark/checkmark.svg" />
-
-			copyNumber = <object className={style.copyImage} data="../../assets/checkmark/checkmark.svg" type="image/svg+xml">
-			  {/* <img src="yourfallback.jpg" /> */}
-			</object>
-		}
-
 		if (emailCopied) {
 			copyEmail = <object className={style.copyImage} data="../../assets/checkmark/checkmark.svg" type="image/svg+xml">
 			  {/* <img src="yourfallback.jpg" /> */}
@@ -155,7 +137,7 @@ export default class Header extends Component {
 					<div>
 						<p>Ready to get started or have a question for us? Please call us at</p>
 						{/* <br /> */}
-						<p className={style.phoneNumber}>276-952-2971 {copyNumber}</p>
+						<a className={style.phoneNumber} href="tel:+1-276-952-2971">276-952-2971</a>
 						{/* <br /> */}
 						<p> and ask for Jonathon. He'll be able to answer any questions you have about buying, procurement, cross-docking, or anything else.</p>
 					</div>

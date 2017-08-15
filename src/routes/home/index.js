@@ -16,6 +16,7 @@ import GoogleMapView from '../../components/map';
 import Subscribe from '../../components/subscribe';
 import LazyImage from '../../components/lazyImage';
 import LazyLoad from 'react-lazyload';
+import Footer from '../../components/footer';
 
 export default class Home extends Component {
 
@@ -29,15 +30,25 @@ export default class Home extends Component {
       pageHero = <VideoBackground />
     } else {
       // window width is less than 500px
-      pageHero = <HomeHero image={<img sizes="(max-width: 927) 100vw, 927"
-    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_927/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 927w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_851/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 851w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_741/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 741w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_617/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 617w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_485/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 485w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_300/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 300w"
+      pageHero = <HomeHero image={<img sizes="(max-width: 927px) 100vw, 927px"
+    srcset="https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_927/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 927w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_921/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 921w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_895/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 895w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_857/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 857w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_816/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 816w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_776/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 776w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_735/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 735w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_690/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 690w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_649/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 649w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_610/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 610w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_562/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 562w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_514/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 514w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_468/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 468w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_416/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 416w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_361/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 361w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/q_80/c_scale,w_300/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png 300w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Wood%27s%20Produce%20Welcome%20Header%20Truck.png"
-    alt="Welcome Header Wood's Produce Truck"
+    alt=""
   />} />
     }
 
@@ -45,8 +56,8 @@ export default class Home extends Component {
       <div className={style.scroll}>
         {pageHero}
         <Section>
-          <Heading text="WHERE FRESH MEETS FRIENDLY" />
-          <Content text="Family owned since 1987, Wood's Produce has grown from its humble roots into a leading, full line perishable foods wholesaler."/>
+          <Heading text="FAMILY OWNED SINCE 1987" />
+          <Content text="Wood's Produce has grown from its humble roots into a leading, Mid-Atlantic, full line perishable foods wholesaler, specializing in fresh fruits and vegetables."/>
           <WhyUsList />
           <LazyLoad height={300} offset={50}>
             <Carousel></Carousel>
@@ -70,6 +81,7 @@ export default class Home extends Component {
           <br />
           <Button text="LET'S GO" url="https://app.bluecart.com/login.html" />
         </Section>
+        <Footer />
       </div>
     );
   }

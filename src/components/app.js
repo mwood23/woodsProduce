@@ -1,8 +1,6 @@
 import { h, Component } from 'preact';
 import { Router } from 'preact-router';
-
 import Header from './header';
-import Footer from './footer';
 import Home from '../routes/home';
 import Products from '../routes/products';
 import FoodSafety from '../routes/foodSafety';
@@ -35,7 +33,6 @@ export default class App extends Component {
 					<OurStory path="/ourStory" />
 					<Careers path="/careers" />
 				</Router>
-				<Footer />
 			</div>
 		);
 	}
