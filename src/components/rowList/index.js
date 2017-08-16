@@ -2,7 +2,6 @@ import style from './style';
 import RowListItem from '../rowListItem'
 
 const RowList = () => (
-  // TODO: Map image URLs from contentful and create RowListItems to render inside the row
     <div className={style.rowList}>
       <RowListItem image="http://woodsproduce.net/img/food-safety/usda-gap-thumb.jpg" text="Good Agricultural Practices" url="http://woodsproduce.net/img/food-safety/USDA%20GAP%20and%20Preventative%20Food%20Defense%20Audit%20Certificate.pdf" />
       <RowListItem image="http://woodsproduce.net/img/food-safety/sqf-procedures-thumb.jpg" text="SQF Trainer"

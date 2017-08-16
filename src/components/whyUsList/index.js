@@ -2,7 +2,6 @@ import style from './style';
 import WhyUsListItem from '../whyUsListItem'
 
 const WhyUsList = () => (
-  // TODO: Map image URLs from contentful and create PartnersListItems to render inside the row
     <div className={style.whyUsList}>
       <WhyUsListItem image={<img sizes="(max-width: 590) 100vw, (max-width: 2600) 33vw, 400"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_400/v1501372285/Wood%27s%20Produce%20Apple%20Cooler.jpg 400w,

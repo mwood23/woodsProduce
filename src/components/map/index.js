@@ -1,11 +1,6 @@
 import flowRight from "lodash.flowRight";
 import style from './style';
-
 import { default as React, Component, PropTypes } from "react";
-
-// TODO: Need a loader for google maps async
-// import FaSpinner from "react-icons/lib/fa/spinner";
-
 import withScriptjs from "react-google-maps/lib/async/withScriptjs";
 import { withGoogleMap, GoogleMap, Marker, Polygon } from "react-google-maps";
 
@@ -171,55 +166,13 @@ export default class GoogleMapView extends Component {
 
   componentDidMount() {
     if (window.google) {
-      console.log('resize called');
       window.google.maps.event.trigger(this._mapComponent, 'resize');
     }
   }
 
   handleMapLoad(map) {
     this._mapComponent = map;
-    if (map) {
-      console.log(map.getZoom());
-
-    }
   }
-
-  /*
-   * This is called when you click on the map.
-   * Go and try click now.
-   */
-  // handleMapClick(event) {
-  //   const nextMarkers = [
-  //     ...this.state.markers,
-  //     {
-  //       position: event.latLng,
-  //       defaultAnimation: 2,
-  //       key: Date.now(), // Add a key property for: http://fb.me/react-warning-keys
-  //     },
-  //   ];
-  //   this.setState({
-  //     markers: nextMarkers,
-  //   });
-  //
-  //   if (nextMarkers.length === 3) {
-  //     this.props.toast(
-  //       `Right click on the marker to remove it`,
-  //       `Also check the code!`
-  //     );
-  //   }
-  // }
-
-  // handleMarkerRightClick(targetMarker) {
-  //   /*
-  //    * All you modify is data, and the view is driven by data.
-  //    * This is so called data-driven-development. (And yes, it's now in
-  //    * web front end and even with google maps API.)
-  //    */
-  //   const nextMarkers = this.state.markers.filter(marker => marker !== targetMarker);
-  //   this.setState({
-  //     markers: nextMarkers,
-  //   });
-  // }
 
   render() {
     return (

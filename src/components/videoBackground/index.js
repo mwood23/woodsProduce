@@ -20,13 +20,9 @@ export default class VideoBackground extends Component {
             preload
             width='100%'
             height='initial'
-            onReady={() => console.log('onReady')}
-            onStart={() => console.log('onStart')}
             onPlay={() => this.setState({ playing: true })}
             onPause={() => this.setState({ playing: false })}
-            onBuffer={() => console.log('onBuffer')}
             onEnded={() => this.setState({ playing: false })}
-            onError={e => console.log('onError', e)}
             fileConfig={{ attributes: { autoPlay: true }}} />
         <div className={style.tagline}>
           <h1><span>WHERE </span><span className={style.greatVibes}>FRESH </span><span>MEETS </span><span className={style.greatVibes}>FRIENDLY </span></h1>

@@ -46,14 +46,9 @@ export default class Header extends Component {
 		// Ugly cross-browser compatibility
 		const top = document.documentElement.scrollTop || document.body.parentNode.scrollTop || document.body.scrollTop
 		// Test < 1 since Safari's rebound effect scrolls past the top
-
 		if (top < 20) {
-			// const className = `${style.header}`
-			// this.base.className = className
 			this.setState({ scrolled: false });
 		} else {
-			// const className = `${style.header} ${style.scrolled}`
-			// this.base.className = className
 			this.setState({ scrolled: true });
 		}
 	}
@@ -79,8 +74,6 @@ export default class Header extends Component {
 
 		// It looks like you can only copy to clipboard from inputs that are on the dom. This creates an element a user will not see with the email to place it on their clipboard.
 		// https://stackoverflow.com/questions/31593297/using-execcommand-javascript-to-copy-hidden-text-to-clipboard
-
-		console.log(value);
 		var tempInput = document.createElement("input");
     tempInput.style = "position: absolute; left: -1000px; top: -1000px;";
 		tempInput.value = 'jonathon@woodsproduce.net';
@@ -102,9 +95,7 @@ export default class Header extends Component {
 
 		let copyEmail = <span onClick={(event) => {this.copyToClipboard(event, 'email')}}>Copy</span>
 		if (emailCopied) {
-			copyEmail = <object className={style.copyImage} data="../../assets/checkmark/checkmark.svg" type="image/svg+xml">
-			  {/* <img src="yourfallback.jpg" /> */}
-			</object>
+			copyEmail = <object className={style.copyImage} data="../../assets/checkmark/checkmark.svg" type="image/svg+xml"></object>
 		}
 
 		return (
@@ -113,16 +104,11 @@ export default class Header extends Component {
 					<img src="../../assets/wplogo1.png" alt="Wood's Produce Logo" />
 				</Link>
 				<nav>
-					{/* Remove active class name if we don't intend on giving it a selected style */}
-					<Link activeClassName={style.active} onClick={this.viewChange} href="/">Home</Link>
-					<Link activeClassName={style.active} onClick={this.viewChange} href="/products">Products</Link>
-					<Link activeClassName={style.active} onClick={this.viewChange} href="/foodSafety">Food Safety</Link>
-					<Link activeClassName={style.active} onClick={this.viewChange} href="/ourStory">Our Story</Link>
-					<Link activeClassName={style.active} onClick={this.viewChange} href="/careers">Careers</Link>
-
-					{/* TODO: Do something here */}
-					{/* <Link activeClassName={style.active} onClick={this.viewChange} href="/"></Link> */}
-
+					<Link onClick={this.viewChange} href="/">Home</Link>
+					<Link onClick={this.viewChange} href="/products">Products</Link>
+					<Link onClick={this.viewChange} href="/foodSafety">Food Safety</Link>
+					<Link onClick={this.viewChange} href="/ourStory">Our Story</Link>
+					<Link onClick={this.viewChange} href="/careers">Careers</Link>
 					<button onClick={this.handleOpenModal}>Contact Us</button>
 				</nav>
 				<ReactModal

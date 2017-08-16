@@ -14,7 +14,7 @@ export default class Careers extends Component {
     // }
 
     return (
-      <div>
+      <div className={style.careers}>
       <Hero image={<img sizes="(max-width: 1600px) 100vw, 1600px"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1600/v1502844979/Header%20Wood%27s%20Produce%20Careers.jpg 1600w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1588/v1502844979/Header%20Wood%27s%20Produce%20Careers.jpg 1588w,
@@ -40,11 +40,11 @@ export default class Careers extends Component {
         <Section>
           <Heading text="Current Openings" />
           <Content text={<span>If you feel like you would be a great fit and are ready to take the next step please send your resume to <b>marcus_sales@woodsproduce.net</b></span>} />
-          <h2>Mechanic</h2>
+          <h3>Mechanic</h3>
           <Content text="We are looking for a mechanic to assist with general maintenance and upkeep on our fleet of 26 trucks. Daily responsibilities include: changing oil, filters, tires, and general truck servicing in our state of the art 10,000 square foot shop. Previous experience in a shop is preferred, but not necessary." />
-          <h2>Truck Driver</h2>
+          <h3>Truck Driver</h3>
           <Content text={<span>Open positions for Class A/B CDL drivers. Wood's Produce delivers to 5 states with daily routes to our customers. <b>Home every night.</b></span>} />
-          <h2>Warehouse Associate</h2>
+          <h3>Warehouse Associate</h3>
           <Content text={<span>A warehouse associate has a variety of responsibilities that includes picking orders, assisting customers, repacking goods, rotating inventory, and ensuring our customers receive the best product possible. Previous experience in a warehouse with active forklift certification is preferred, but not required.<br />*Must be able to lift over 50 pounds</span>} />
         </Section>
         <Footer />
