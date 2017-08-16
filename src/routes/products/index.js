@@ -14,19 +14,19 @@ export default class Products extends Component {
   render() {
     return (
     <div>
-      <Hero image={<img sizes="(max-width: 4032) 100vw, 4032"
-    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_2600/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 2600w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_2554/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 2554w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_2390/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 2390w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_2166/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 2166w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1951/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 1951w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1711/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 1711w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1445/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 1445w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1163/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 1163w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_799/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 799w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_300/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg 300w"
-    src="https://res.cloudinary.com/woodsproduce/image/upload/v1501378727/Wood%27s%20Produce%20Header%20Produce%20Peaches.jpg"
-    alt="Peaches"
+      <Hero image={<img sizes="(max-width: 2600px) 100vw, 2600px"
+    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_2600/v1502844979/Header%20Wood%27s%20Produce%20Peaches.jpg 2600w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_2554/v1502844979/Header%20Wood%27s%20Produce%20Peaches.jpg 2554w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_2390/v1502844979/Header%20Wood%27s%20Produce%20Peaches.jpg 2390w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_2166/v1502844979/Header%20Wood%27s%20Produce%20Peaches.jpg 2166w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1951/v1502844979/Header%20Wood%27s%20Produce%20Peaches.jpg 1951w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1711/v1502844979/Header%20Wood%27s%20Produce%20Peaches.jpg 1711w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1445/v1502844979/Header%20Wood%27s%20Produce%20Peaches.jpg 1445w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1163/v1502844979/Header%20Wood%27s%20Produce%20Peaches.jpg 1163w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_799/v1502844979/Header%20Wood%27s%20Produce%20Peaches.jpg 799w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_300/v1502844979/Header%20Wood%27s%20Produce%20Peaches.jpg 300w"
+    src="https://res.cloudinary.com/woodsproduce/image/upload/v1502844979/Header%20Wood%27s%20Produce%20Peaches.jpg"
+    alt="Peaches Header Image"
   />} heading="Our Products" />
       <Section>
         <Heading text="A LITTLE BIT OF EVERYTHING" />

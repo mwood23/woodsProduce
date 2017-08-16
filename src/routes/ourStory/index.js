@@ -14,11 +14,11 @@ export default class OurStory extends Component {
     return (
       <div>
         <Hero image={<img sizes="(max-width: 1465px) 100vw, 1465px"
-    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1465/v1502761460/Wood%27s%20Produce%20Header%20Our%20Story.jpg 1465w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1369/v1502761460/Wood%27s%20Produce%20Header%20Our%20Story.jpg 1369w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_928/v1502761460/Wood%27s%20Produce%20Header%20Our%20Story.jpg 928w,
- 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_300/v1502761460/Wood%27s%20Produce%20Header%20Our%20Story.jpg 300w"
-    src="https://res.cloudinary.com/woodsproduce/image/upload/v1502761460/Wood%27s%20Produce%20Header%20Our%20Story.jpg"
+    srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1465/v1502844979/Header%20Wood%27s%20Produce%20Our%20Story.jpg 1465w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1369/v1502844979/Header%20Wood%27s%20Produce%20Our%20Story.jpg 1369w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_928/v1502844979/Header%20Wood%27s%20Produce%20Our%20Story.jpg 928w,
+ 	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_300/v1502844979/Header%20Wood%27s%20Produce%20Our%20Story.jpg 300w"
+    src="https://res.cloudinary.com/woodsproduce/image/upload/v1502844979/Header%20Wood%27s%20Produce%20Our%20Story.jpg"
     alt=""
   />} heading="Our Story" />
         <Section>

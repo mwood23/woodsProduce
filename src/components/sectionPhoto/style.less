@@ -52,9 +52,8 @@
     flex-direction: column;
     width: 60%;
 
-    // Silly IE 11 fix
-    // div {
-    //   width: 100%;
-    // }
+    @media (max-width: @x-small) {
+			width: 100%;
+		}
   }
 }
