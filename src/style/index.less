@@ -2,6 +2,7 @@
 // @import 'helpers';
 
 @woods-produce-green: #20603C;
+@woods-produce-accent-green: #74ca33;
 @default-font-color: #333;
 
 @nav-bar-height: 4rem;
@@ -9,6 +10,33 @@
 @section-min-height: 15rem;
 @small: 770px;
 @x-small: 590px;
+
+.headerOneStyle() {
+	font-weight: bold;
+	font-size: 3.25rem;
+
+	@media (max-width: @small) {
+		font-size: 2.35rem !important;
+	}
+
+	@media (max-width: @x-small) {
+		font-size: 1.6rem !important;
+	}
+}
+
+.headerTwoStyle() {
+	font-weight: bold;
+	font-size: 2.85rem;
+	font-family: 'Sedgwick Ave', cursive;
+
+	@media (max-width: @small) {
+		font-size: 2rem !important;
+	}
+
+	@media (max-width: @x-small) {
+		font-size: 1.5rem !important;
+	}
+}
 
 .content {
 	padding-top: @nav-bar-height;

@@ -4,6 +4,7 @@ import { Link } from 'preact-router/match';
 import style from './style';
 import ReactModal from 'react-modal';
 import Heading from '../heading';
+import ModalContactItem from '../modalContactItem';
 
 export default class Header extends Component {
 	// This handles opening and closing the hamburger menu on mobile
@@ -93,7 +94,7 @@ export default class Header extends Component {
 
 	render({ url }, { open, scrolled, showModal, emailCopied, ...props }) {
 
-		let copyEmail = <span onClick={(event) => {this.copyToClipboard(event, 'email')}}>Copy</span>
+		let copyEmail = <span onClick={(event) => {this.copyToClipboard(event, 'email')}}>COPY</span>
 		if (emailCopied) {
 			copyEmail = <object className={style.copyImage} data="../../assets/checkmark/checkmark.svg" type="image/svg+xml"></object>
 		}
@@ -121,16 +122,18 @@ export default class Header extends Component {
 					<Heading text="GIVE US A RING" />
 					<img className={style.close} onClick={this.handleCloseModal} src="../../assets/close.svg" />
 					<div>
-						<p>Ready to get started or have a question for us? Please call us at</p>
+						<p className={style.copy}>Ready to get started or have questions for us? We look forward to hearing from you! <b>When calling, ask for Jonathon.</b></p>
+						<ModalContactItem image={'../../assets/phone.svg'} contactTitle={'Phone (Preferred)'} contactDetail={<a href="tel:+1-276-952-2971">276-952-2971</a>} />
+						<ModalContactItem image={'../../assets/mail.svg'} contactTitle={'Email'} contactDetail={<p>jonathon@woodsproduce.net</p>} copyIcon={copyEmail} />
+						<ModalContactItem image={'../../assets/fax.svg'} contactTitle={'Fax'} contactDetail={<p>276-952-2974</p>} />
+
 						{/* <br /> */}
-						<a className={style.phoneNumber} href="tel:+1-276-952-2971">276-952-2971</a>
-						{/* <br /> */}
-						<p> and ask for Jonathon. He'll be able to answer any questions you have about buying, procurement, cross-docking, or anything else.</p>
+						{/* <p> and ask for Jonathon. He'll be able to answer any questions you have about buying, procurement, cross-docking, or anything else.</p> */}
 					</div>
-					<div>
+					{/* <div>
 						<p>Rather email? Please send a message to <b>jonathon@woodsproduce.com</b> {copyEmail}</p>
 						<p>Need to fax? <b>276-952-2974</b></p>
-					</div>
+					</div> */}
 				</ReactModal>
 				<Hamburgler open={open} scrolled={scrolled} onClick={this.toggle} />
 			</header>

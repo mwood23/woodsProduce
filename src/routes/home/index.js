@@ -59,8 +59,8 @@ export default class Home extends Component {
           <Heading text="FAMILY OWNED SINCE 1987" />
           <Content text="Wood's Produce has grown from its humble roots into a leading, Mid-Atlantic, full line perishable foods wholesaler, specializing in fresh fruits and vegetables."/>
           <WhyUsList />
-          <LazyLoad height={300} offset={50}>
-            <Carousel></Carousel>
+          <LazyLoad height={300} offset={150}>
+            <Carousel />
           </LazyLoad>
         </Section>
         <MapSection />
@@ -73,7 +73,9 @@ export default class Home extends Component {
         <Section>
           <Heading text="PRODUCTS" />
           <Content text="With over 1,900 items on hand, we have everything you need for your retail market or restaurant. We have everything from display baskets to grocery bags (and of course, produce and candy) to make sure you always have what you need. If you need speciality packs or hard to find items we have partnered with leaders in the industry to make sure you get your product by the next delivery."/>
-          <ProductTiles />
+          <LazyLoad offset={200}>
+            <ProductTiles />
+          </LazyLoad>
         </Section>
         <Section>
           <Heading text="IF YOU'RE HERE TO ORDER" />

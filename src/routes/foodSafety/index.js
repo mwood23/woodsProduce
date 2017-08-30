@@ -62,7 +62,12 @@ export default class FoodSafety extends Component {
         </SectionPhoto>
         <Section>
           <Heading text="CERTIFICATIONS" />
-          <RowList />
+          <ul>
+            <li><a href="../../assets/files/woodsProduce_GAP_USDA_certification.pdf" target="noopener">USDA GAP</a></li>
+            <li><a href="../../assets/files/woodsProduce_SQF_certification.pdf" target="noopener">SQF Level Two Certification</a></li>
+            <li><a href="../../assets/files/woodsProduce_SQF_grading_report.pdf" target="noopener">SQF Grading Report</a></li>
+            <li><a href="../../assets/files/woodsProduce_SQF_trainer_certification.pdf" target="noopener">SQF Trainer Certification</a></li>
+          </ul>
         </Section>
         <Footer />
       </div>

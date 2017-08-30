@@ -6,7 +6,7 @@ const ProductTile = ({text, image, url}) => (
   <Link href={url} className={style.productTile}>
     {/* <div> */}
     <div className={style.image}>
-      <LazyImage image={image} />
+      {image}
     </div>
 
       <div className={style.tileText}>

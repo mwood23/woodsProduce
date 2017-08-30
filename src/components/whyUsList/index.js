@@ -18,7 +18,7 @@ const WhyUsList = () => (
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_180/v1501372284/Wood%27s%20Produce%20Onion%20Farm%20Idaho/Oregon.jpg 180w"
     src="https://res.cloudinary.com/woodsproduce/image/upload/v1501372284/Wood%27s%20Produce%20Onion%20Farm%20Idaho/Oregon.jpg"
     alt="Onion Farm"
-  />} text="We buy direct from the farm to offer you the freshest product at the cheapest price. Our facilities hold SQF level 2 certifications with a full HAACP program." />
+  />} text="We buy direct from the farm to offer you the freshest product at the lowest price. Our facilities hold SQF level 2 certifications with a full HAACP program." />
       <WhyUsListItem image={<img sizes="(max-width: 590) 100vw, (max-width: 2600) 33vw, 500"
     srcset="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_500/v1501372285/Wood%27s%20Produce%20Truck%20Sunset.jpg 500w,
  	 	https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_483/v1501372285/Wood%27s%20Produce%20Truck%20Sunset.jpg 483w,

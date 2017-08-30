@@ -177,7 +177,7 @@ export default class GoogleMapView extends Component {
   render() {
     return (
       <GoogleMapComponent
-        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyCc7k9UC2U16QKBnAwLVpk1wgh6t0f30dQ"
+        googleMapURL="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=AIzaSyDbev5XOmved15STRk8nEutdtZQx6-xQwA"
         loadingElement={
           <div className={style.googleMap}>
             loading

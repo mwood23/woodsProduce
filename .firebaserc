@@ -1,5 +1,6 @@
 {
   "projects": {
-    "development": "woodsproduce-development"
+    "development": "woodsproduce-development",
+    "default": "woods-79e37"
   }
 }
