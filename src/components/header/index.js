@@ -94,16 +94,19 @@ export default class Header extends Component {
 
 	render({ url }, { open, scrolled, showModal, emailCopied, ...props }) {
 
-		let copyEmail = <span onClick={(event) => {this.copyToClipboard(event, 'email')}}>COPY</span>
-		if (emailCopied) {
-			copyEmail = <object className={style.copyImage} data="../../assets/checkmark/checkmark.svg" type="image/svg+xml"></object>
+		let copyEmail
+		const mq = window.matchMedia( "(min-width: 500px)" );
+		let pageHero
+		if (mq.matches) {
+			copyEmail = <span onClick={(event) => {this.copyToClipboard(event, 'email')}}>COPY</span>
+			if (emailCopied) {
+				copyEmail = <object className={style.copyImage} data="../../assets/checkmark/checkmark.svg" type="image/svg+xml"></object>
+			}
 		}
 
 		return (
 			<header className={cx(style.header, open && style.open, scrolled && style.scrolled)}>
-				<Link activeClassName={style.active} title="Go to Wood's Produce home page" onClick={this.viewChange} href="/">
 					<img src="../../assets/wplogo1.png" alt="Wood's Produce Logo" />
-				</Link>
 				<nav>
 					<Link onClick={this.viewChange} href="/">Home</Link>
 					<Link onClick={this.viewChange} href="/products">Products</Link>
