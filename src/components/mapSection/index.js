@@ -1,6 +1,6 @@
 import style from './style';
 import Heading from '../heading';
-import GoogleMapView from '../map';
+import MapComponent from '../map';
 import LazyLoad from 'react-lazyload';
 
 const MapSection = ({children}) => (
@@ -8,7 +8,7 @@ const MapSection = ({children}) => (
     <Heading text="DELIVERY AREA" />
     {/* <LazyLoad height={300} offset={50}> */}
       <div className={style.mapContainer}>
-        <GoogleMapView />
+        <MapComponent />
       </div>
     {/* </LazyLoad> */}
   </section>

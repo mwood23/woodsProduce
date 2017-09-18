@@ -5,7 +5,6 @@ import Section from '../../components/section';
 import SectionPhoto from '../../components/sectionPhoto';
 import Heading from '../../components/heading';
 import Content from '../../components/content';
-import RowList from '../../components/rowList';
 import Footer from '../../components/footer';
 
 export default class FoodSafety extends Component {

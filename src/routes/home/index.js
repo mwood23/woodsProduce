@@ -12,9 +12,7 @@ import Button from '../../components/button';
 import ProductTiles from '../../components/productTiles';
 import FeaturedList from '../../components/featuredList';
 import Carousel from '../../components/carousel';
-import GoogleMapView from '../../components/map';
 import Subscribe from '../../components/subscribe';
-import LazyImage from '../../components/lazyImage';
 import LazyLoad from 'react-lazyload';
 import Footer from '../../components/footer';
 

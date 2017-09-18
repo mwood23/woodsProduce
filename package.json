@@ -27,15 +27,14 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "google-map-react": "^0.24.0",
-    "lodash.flowright": "^3.5.0",
+    "mapbox-gl": "^0.40.0",
     "preact": "^8.1.0",
     "preact-compat": "^3.16.0",
     "preact-router": "^2.5.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-google-maps": "^7.2.0",
     "react-lazyload": "^2.2.7",
+    "react-mapbox-gl": "^2.5.0",
     "react-modal": "^2.2.2",
     "react-owl-carousel": "^2.2.0",
     "react-player": "^0.24.4"
