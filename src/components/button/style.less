@@ -19,43 +19,8 @@ button[data-wipe] {
     margin-top: 1rem;
   }
 
-  &:after,
-  &:before {
-    content: attr(data-wipe);
-    padding-top: inherit;
-    padding-bottom: inherit;
-    white-space: nowrap;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
-    color: @woods-produce-green;
-    background: #FFF;
-  }
-
-  &:before {
-    left: 0;
-    text-indent: 18px;
-    width: 0;
-  }
-
-  &:after {
-    padding-left: inherit;
-    padding-right: inherit;
-    left: 100%;
-    text-indent: calc(-100% - 34px);
-    transition: 0.2s @easing;
-  }
-
   &:hover {
-    &:before {
-      width: 100%;
-      transition: width 0.2s @easing;
-    }
-
-    &:after {
-      left: 0;
-      text-indent: 0;
-      transition: 0s 0.2s @easing;
-    }
+    border: 2px solid lighten(@woods-produce-green, 15%);
+    background-color: lighten(@woods-produce-green, 15%);
   }
 }

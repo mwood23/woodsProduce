@@ -61,7 +61,9 @@ export default class Home extends Component {
             <Carousel />
           </LazyLoad>
         </Section>
-        <MapSection />
+        <LazyLoad height={300} offset={275}>
+          <MapSection />
+        </LazyLoad>
         <Section>
           <Heading text="FEATURED ITEMS" />
           <Content text="We work with suppliers and industry leaders to introduce new products and help out farmers if they run long on product. Every week we have a featured deals sheet filled with unique veg and deals on consumer staples. If you'd like to have this in your inbox every week (with prices!) please sign up:"/>
@@ -77,7 +79,7 @@ export default class Home extends Component {
         </Section>
         <Section>
           <Heading text="IF YOU'RE HERE TO ORDER" />
-          <Content text={<span>Place your order online through our partner, BlueCart. Our driver will have it to you by your next delivery. Emergency order? Please call us to see how we can help at <b>276-952-2978</b></span>}/>
+          <Content text={<span>Place your order online through our partner, BlueCart. Our driver will have it to you by your next delivery. Emergency order? Please call us to see how we can help at <b><a href="tel:+1-276-952-2971">276-952-2971</a></b>.</span>}/>
           <br />
           <Button text="LET'S GO" url="https://app.bluecart.com/login.html" />
         </Section>

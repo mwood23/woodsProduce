@@ -1,6 +1,7 @@
 import ReactMapboxGl, {Layer, Feature, ZoomControl, Marker} from "react-mapbox-gl";
 
-const Map = ReactMapboxGl({accessToken: "pk.eyJ1IjoibWFyY3Vzd29vZDIzIiwiYSI6ImNqNWVqdzZzOTA1MzAzM21uejB1OHd6NGIifQ.B3sfFWNRf4mRXKcIAsxwFA"});
+const Map = ReactMapboxGl({accessToken: "pk.eyJ1IjoibWFyY3Vzd29vZDIzIiwiYSI6ImNqNWVqdzZzOTA1MzAzM21uejB1OHd6NGIifQ.B3sfFWNRf4mRXKcIAsxwFA",
+scrollZoom: false});
 
 const polygonPaint = {
   'fill-color': '#6F788A',
@@ -126,8 +127,7 @@ const MapComponent = () => (
     width: "100%"
   }}
   center={center}
-  zoom={[5]}
-  scrollZoom={false}>
+  zoom={[5]}>
     <Layer type="fill" paint={polygonPaint}>
       <Feature coordinates={coords}/>
       <Feature coordinates={[center]}/>
@@ -136,7 +136,7 @@ const MapComponent = () => (
     <Marker
       coordinates={center}
       anchor="bottom">
-      <img style={{width: '40px', height: '40px'}} src={markerUrl}/>
+      <img style={{width: '30px', height: '40px'}} src={markerUrl}/>
     </Marker>
   </Map>
 );

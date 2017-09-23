@@ -14,4 +14,7 @@ export default function (config, env, helpers) {
   //   openAnalyzer: false,
   //   generateStatsFile: true,
   // }))
+
+	// Uglify breaks Mapbox :(
+	config.module.noParse = /(mapbox-gl)\.js$/
 }
