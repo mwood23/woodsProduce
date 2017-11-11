@@ -31,7 +31,7 @@ const ProductTiles = () => (
       url="/products" />
     <ProductTile
       text="Packaging"
-      image={<img src="http://www.broncopackaging.com/images/products/ph_products_tomatoesSTACK.jpg" alt="Tomato Box" />}
+      image={<img src="https://images.pexels.com/photos/75606/theme-chaos-75606.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="Tomato Box" />}
       url="/products" />
     <ProductTile
       text="Eggs"

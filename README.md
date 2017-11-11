@@ -17,6 +17,7 @@
 
 ### Commands
 `preact watch --no-prerender --template src/template.html`: Watch for changes
+`preact build --no-prerender --template src/template.html`: Build app
 
 ### Quickstart
 ```
