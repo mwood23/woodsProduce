@@ -1,21 +1,21 @@
-@import '~style/index';
+@import '../../style/index';
 
 .section {
-  padding: 1rem 2rem;
-  min-height: @section-min-height;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative;
-  max-width: 100%;
+	padding: 1rem 2rem;
+	min-height: @section-min-height;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	max-width: 100%;
 
-  // Silly IE 11 fix
-  // div {
-  //   width: 100%;
-  // }
+	// Silly IE 11 fix
+	// div {
+	//   width: 100%;
+	// }
 
-  @media (max-width: @x-small) {
-    padding: .1rem 1rem;
-  }
+	@media (max-width: @x-small) {
+		padding: 0.1rem 1rem;
+	}
 }

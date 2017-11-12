@@ -1,26 +1,26 @@
-@import '~style/index';
+@import '../../style/index';
 @easing: ease-in-out;
 
 button[data-wipe] {
-  display: inline-block;
-  padding: 12px 18px;
-  font-size: 16px;
-  text-decoration: none;
-  position: relative;
-  border: 2px solid @woods-produce-green;
-  background-color: @woods-produce-green;
-  border-radius: 3px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  text-align: left;
-  color: #FFF;
-  overflow: hidden;
-  @media (max-width: @x-small) {
-    margin-top: 1rem;
-  }
+	display: inline-block;
+	padding: 12px 18px;
+	font-size: 16px;
+	text-decoration: none;
+	position: relative;
+	border: 2px solid @woods-produce-green;
+	background-color: @woods-produce-green;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	text-align: left;
+	color: #fff;
+	overflow: hidden;
+	@media (max-width: @x-small) {
+		margin-top: 1rem;
+	}
 
-  &:hover {
-    border: 2px solid lighten(@woods-produce-green, 15%);
-    background-color: lighten(@woods-produce-green, 15%);
-  }
+	&:hover {
+		border: 2px solid lighten(@woods-produce-green, 15%);
+		background-color: lighten(@woods-produce-green, 15%);
+	}
 }

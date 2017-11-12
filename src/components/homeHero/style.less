@@ -1,4 +1,4 @@
-@import '~style/index';
+@import '../../style/index';
 
 .homeHeroSpace {
 	height: 45vh;
@@ -13,8 +13,8 @@
 
 		button {
 			color: white;
-      border-radius: 4px;
-      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+			border-radius: 4px;
+			text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 			background: @woods-produce-green;
 			border: none;
 			padding: 5px;
@@ -29,14 +29,14 @@
 
 	.tagline {
 		position: absolute;
-	  top: 50%;
-	  left: 50%;
-	  transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 		text-align: center;
 
 		@media (max-width: @x-small) {
 			width: 100%;
-			padding: .25rem;
+			padding: 0.25rem;
 		}
 
 		h1 {
@@ -51,11 +51,11 @@
 		}
 
 		.headerOneStyle {
-			.headerOneStyle()
+			.headerOneStyle();
 		}
 
 		.headerTwoStyle {
-			.headerTwoStyle()
+			.headerTwoStyle();
 		}
 	}
 }

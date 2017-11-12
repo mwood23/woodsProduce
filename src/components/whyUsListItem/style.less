@@ -1,28 +1,27 @@
-@import '~style/index';
+@import '../../style/index';
 
 .whyUsListItem {
-  width: 23%;
-  margin: 2rem;
+	width: 23%;
+	margin: 2rem;
 
-  @media (max-width: @nav-bar-mobile-breakpoint) {
-    width: 60%;
-    margin: .5rem;
-  }
+	@media (max-width: @nav-bar-mobile-breakpoint) {
+		width: 60%;
+		margin: 0.5rem;
+	}
 
-  @media (max-width: @x-small) {
-    width: 90%;
-  }
+	@media (max-width: @x-small) {
+		width: 90%;
+	}
 
-  .photoContainer {
-    width: 100%;
+	.photoContainer {
+		width: 100%;
 
-    img {
-      object-fit: contain;
-      height: 100%;
-      width: 100%;
-      display: block;
-      margin: auto;
-    }
-  }
-
+		img {
+			object-fit: contain;
+			height: 100%;
+			width: 100%;
+			display: block;
+			margin: auto;
+		}
+	}
 }

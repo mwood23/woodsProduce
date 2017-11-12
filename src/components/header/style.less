@@ -1,4 +1,4 @@
-@import '~style/index';
+@import '../../style/index';
 
 .header {
 	position: fixed;
@@ -9,8 +9,8 @@
 	line-height: @nav-bar-height;
 	padding: 0;
 	z-index: 50;
-	transition: all .25s ease;
-  transform: translateZ(0);
+	transition: all 0.25s ease;
+	transform: translateZ(0);
 
 	&.scrolled {
 		background: white;
@@ -93,9 +93,9 @@
 			padding: 0 15px;
 			min-width: 50px;
 			text-align: center;
-			background: rgba(255,255,255,0);
+			background: rgba(255, 255, 255, 0);
 			text-decoration: none;
-			color: #EEE;
+			color: #eee;
 			// will-change: background-color;
 			//
 			// &:hover, &:active {
@@ -115,7 +115,7 @@
 			font: icon;
 			font-size: 20px;
 
-			margin-left: .5rem;
+			margin-left: 0.5rem;
 			transform: inherit;
 			top: initial;
 			border: solid white 1px;
@@ -125,8 +125,8 @@
 
 			@media (max-width: @nav-bar-mobile-breakpoint) {
 				position: absolute;
-			  top: 1rem;
-			  right: 3.5rem;
+				top: 1rem;
+				right: 3.5rem;
 			}
 		}
 	}
@@ -166,12 +166,12 @@
 		height: 100%;
 		border-radius: 50%;
 		transform-origin: center;
-		background: rgba(255,255,255,0.2);
+		background: rgba(255, 255, 255, 0.2);
 		transform: scale(0);
 	}
 
 	&:active:before {
-		animation: pop 200ms forwards cubic-bezier(.15,1.05,.54,1.29) 1;
+		animation: pop 200ms forwards cubic-bezier(0.15, 1.05, 0.54, 1.29) 1;
 	}
 	@keyframes pop {
 		to {
@@ -188,7 +188,7 @@
 		border-width: 1px 0;
 		margin: 0 auto 3px;
 		padding: 0;
-		background: #FFF;
+		background: #fff;
 		border-radius: 1px;
 		font-size: 1px;
 		transition: all 200ms ease;
@@ -204,12 +204,14 @@
 	}
 
 	&[open] {
-		.hb1, .hb2, .hb3 {
+		.hb1,
+		.hb2,
+		.hb3 {
 			background: white;
 		}
 
 		.hb1 {
-			transform: translate(4px,-1px) rotate(45deg);
+			transform: translate(4px, -1px) rotate(45deg);
 		}
 
 		.hb2 {
@@ -217,7 +219,7 @@
 		}
 
 		.hb3 {
-			transform: translate(2px,1px) rotate(-45deg);
+			transform: translate(2px, 1px) rotate(-45deg);
 		}
 	}
 }
@@ -225,29 +227,27 @@
 // Modal!
 .modalOverlay {
 	position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  background-color: rgba(0,0,0,0.3);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba(0, 0, 0, 0.3);
 	z-index: 100;
-	animation: fadeIn .15s;
+	animation: fadeIn 0.15s;
 	opacity: 1;
-
 
 	@keyframes fadeIn {
 		from {
-			background-color: rgba(0,0,0,0);
+			background-color: rgba(0, 0, 0, 0);
 		}
 		to {
-			background-color: rgba(0,0,0,0.3);
+			background-color: rgba(0, 0, 0, 0.3);
 		}
 	}
-
 }
 
 .fadeOut {
-	transition: opacity .25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;
 	opacity: 0;
 }
 
@@ -256,21 +256,21 @@
 	top: 40px;
 	left: 80px;
 	right: 80px;
-	border: 1px solid rgba(0,0,0,.2);
+	border: 1px solid rgba(0, 0, 0, 0.2);
 	border-radius: 6px;
-  background-clip: padding-box;
+	background-clip: padding-box;
 	background: rgb(255, 255, 255);
-  box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 	overflow: auto;
 	border-radius: 4px;
 	outline: none;
 	padding: 2rem 2rem 3rem 2rem;
-	animation: topBottomFadeIn .3s;
+	animation: topBottomFadeIn 0.3s;
 	max-width: 1200px;
 	margin: 0 auto;
 
 	h2 {
-		color: @woods-produce-green
+		color: @woods-produce-green;
 	}
 
 	.copy {
@@ -287,7 +287,6 @@
 		// 	margin: .25rem 0;
 		// }
 	}
-
 
 	@keyframes topBottomFadeIn {
 		0% {
@@ -316,7 +315,6 @@
 			top: 15px;
 		}
 
-
 		@media (max-width: @x-small) {
 			bottom: 15px;
 		}
@@ -342,18 +340,18 @@
 
 	p {
 		@media (max-width: @x-small) {
-			margin: .5rem 0;
+			margin: 0.5rem 0;
 		}
 	}
 
 	span {
 		font-size: 16px;
-    background: lightgray;
-    padding: 4px;
-    border-radius: 4px;
+		background: lightgray;
+		padding: 4px;
+		border-radius: 4px;
 	}
 
 	.copyImage {
 		height: 25px;
-	};
+	}
 }
