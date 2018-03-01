@@ -10,12 +10,11 @@
 		<link href="https://fonts.googleapis.com/css?family=Bitter|Lato|Sedgwick+Ave" rel="stylesheet">
 		<link rel="manifest" href="/manifest.json">
 
-		<meta name=”description” content="Wood's Produce is a full-line perishable foods distributor operating in the Mid-Atlantic region specializing in fresh fruits and vegetables.">
+		<meta name="description" content="Wood's Produce is a full-line perishable foods distributor operating in the Mid-Atlantic region specializing in fresh fruits and vegetables. Call 276-952-8365 for next day delivery!">
 
-		<!-- Unfurl! TODO: Switch to production site and test this -->
 		<!-- facebook open graph tags  -->
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://woodsproduce-development.firebaseapp.com/" />
+		<meta property="og:url" content="https://woodsproduce.com/" />
 		<meta property="og:title" content="Wood's Produce" />
 		<meta property="og:description" content="Wood's Produce is a full-line perishable foods distributor operating in the Mid-Atlantic region specializing in fresh fruits and vegetables." />
 		<meta property="og:image" content="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1334/v1501372719/Wood%27s%20Produce%20Header%20Produce%20Peppers.jpg" />
@@ -26,15 +25,14 @@
 		<meta name="twitter:title" value="Wood's Produce" />
 		<meta name="twitter:description" value="Wood's Produce is a full-line perishable foods distributor operating in the Mid-Atlantic region specializing in fresh fruits and vegetables." />
 		<meta name="twitter:image" content="https://res.cloudinary.com/woodsproduce/image/upload/c_scale,w_1334/v1501372719/Wood%27s%20Produce%20Header%20Produce%20Peppers.jpg" />
-		<meta name="twitter:url" value="https://woodsproduce-development.firebaseapp.com/" />
+		<meta name="twitter:url" value="https://woodsproduce.com/" />
 		<meta name="twitter:label1" value="Give Us a Call At" />
 		<meta name="twitter:data1" value="276-952-2978" />
 		<meta name="twitter:label2" value="Or Email" />
 		<meta name="twitter:data2" value="jonathon@woodsproduce.net" />
 
     <noscript>
-      You have Javascript disabled in your web browser. It is required to access the current Wood's Produce website. You are being redirected to the old website.
-      <meta HTTP-EQUIV="REFRESH" content="5; url=http://woodsproduce.net/">
+      You have Javascript disabled in your web browser. It is required to access the Wood's Produce website.
     </noscript>
 
 		<% if (htmlWebpackPlugin.options.manifest.theme_color) { %>
@@ -55,15 +53,29 @@
 
 		<!-- Google Analytics -->
 		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		(function(i, s, o, g, r, a, m) {
+	i.GoogleAnalyticsObject = r;
+	(i[r] =
+		i[r] ||
+		function() {
+			(i[r].q = i[r].q || []).push(arguments);
+		}),
+		(i[r].l = 1 * new Date());
+	(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+	a.async = 1;
+	a.src = g;
+	m.parentNode.insertBefore(a, m);
+})(
+	window,
+	document,
+	'script',
+	'https://www.google-analytics.com/analytics.js',
+	'ga'
+);
 
-		  ga('create', 'UA-105570803-1', 'auto');
-		  ga('send', 'pageview');
-
-		</script>
+ga('create', 'UA-105570803-1', 'auto');
+ga('send', 'pageview');
+</script>
 	</head>
 	<body>
 		<%= htmlWebpackPlugin.options.ssr({
