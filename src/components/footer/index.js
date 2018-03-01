@@ -1,8 +1,7 @@
 import { h } from 'preact';
 import style from './style';
-import SpecialUsePermit from '../../assets/files/woodsProduce_specialUsePermit.pdf';
 
-export const Footer = () => {
+const Footer = () => {
 	const address =
 		"Wood's Produce Company \n 131 Cherry Creek Road \n Meadows of Dan, VA 24120";
 	const phoneNumbers = 'Phone: (800) 952-2978 \n Fax: (276) 952-2974';
@@ -13,7 +12,10 @@ export const Footer = () => {
 			<div className={style.footerColumns}>
 				<div className={style.address}>{address}</div>
 				<div>
-					<a href={SpecialUsePermit} rel="noreferrer noopener" target="_blank">
+					<a
+						href="https://drive.google.com/file/d/1to-JNVjKTzioCaD9jH4sNV0fKO1aFfmn/view?usp=sharing"
+						rel="noreferrer noopener"
+						target="_blank">
 						Special Use Permit
 					</a>
 					<a
@@ -30,3 +32,5 @@ export const Footer = () => {
 		</div>
 	);
 };
+
+export default Footer;
